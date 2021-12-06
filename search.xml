@@ -4,13 +4,27 @@
   
     
     <entry>
-      <title>Hello World</title>
-      <link href="/2021/12/02/hello-world/"/>
-      <url>/2021/12/02/hello-world/</url>
+      <title>Typora</title>
+      <link href="/2021/12/06/Typora/"/>
+      <url>/2021/12/06/Typora/</url>
       
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+        <content type="html"><![CDATA[<h2 id="Typora的用法"><a href="#Typora的用法" class="headerlink" title="Typora的用法"></a>Typora的用法</h2><h4 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h4><p>​    格式：#+空格+标题（输入几个#号就代表几级标题，最小6级标题）</p><p>​    快捷键：ctrl + 数字</p><h1 id="这是一级标题"><a href="#这是一级标题" class="headerlink" title="这是一级标题"></a>这是一级标题</h1><h2 id="这是二级标题"><a href="#这是二级标题" class="headerlink" title="这是二级标题"></a>这是二级标题</h2><h3 id="这是三级标题"><a href="#这是三级标题" class="headerlink" title="这是三级标题"></a>这是三级标题</h3><h4 id="这是四级标题"><a href="#这是四级标题" class="headerlink" title="这是四级标题"></a>这是四级标题</h4><h5 id="这是五级标题"><a href="#这是五级标题" class="headerlink" title="这是五级标题"></a>这是五级标题</h5><h6 id="这是六级标题"><a href="#这是六级标题" class="headerlink" title="这是六级标题"></a>这是六级标题</h6><h4 id="文字"><a href="#文字" class="headerlink" title="文字"></a>文字</h4><p>删除线</p><p>语法：~~ (波浪线)文字~~（波浪线）</p><p>快捷键：Alt+shift+5</p><p><del>删除线</del></p><h4 id="斜体"><a href="#斜体" class="headerlink" title="斜体"></a>斜体</h4><p>语法：* 文字*    或  <em>文字</em></p><p>快捷键：ctrl + i</p><h4 id="加粗"><a href="#加粗" class="headerlink" title="加粗"></a>加粗</h4><p>语法:** 文字** __ 文字__</p><p>快捷键：ctrl + 文字</p><h4 id="斜体-加粗"><a href="#斜体-加粗" class="headerlink" title="斜体+加粗"></a>斜体+加粗</h4><p>语法:***   文字    * * *      ___ 文字 ___（没有空格，这里为了区分）</p><p>快捷键:无</p><h4 id="下划线"><a href="#下划线" class="headerlink" title="下划线"></a>下划线</h4><p>语法：<u> 文字 </u></p><p>快捷键：ctrl + u</p><h4 id="下标"><a href="#下标" class="headerlink" title="下标"></a>下标</h4><p>水：H<del>2</del>0</p><p>双氧水：H<del>2</del>0~2</p><h4 id="上标"><a href="#上标" class="headerlink" title="上标"></a>上标</h4><p>面积：m^2^</p><p>体积：m^3^</p><h4 id="表情"><a href="#表情" class="headerlink" title="表情"></a>表情</h4><p>常用的表情</p><p>😄😆😵😭😰😅😢😤 😍😎😩👍👎💯👏🔔🎁❓💣 ❤️☕️🌀 🙇💋🙏💦 💩 ❗️ 💢</p><h4 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h4><p>可以在—分割线加入：设置表格对齐方式<br>“:——–“表示左对齐，”:———:“表示居中对齐，”———-:”表示右对齐</p><h4 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h4><blockquote><p>这是一个引用（能看清多了个啥吗？）</p></blockquote><h4 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h4><p>*一</p><p>-二</p><p>+三种都是无序列表</p><h4 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h4><p>1.数字加.是有序列表</p><p>2.数字顺序不决定列表的顺序</p><p>3.推荐 1 2 3 4的顺序</p><p>4.没啦</p>]]></content>
       
       
+      <categories>
+          
+          <category> Makedown </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> makedown </tag>
+            
+            <tag> 学习 </tag>
+            
+        </tags>
       
     </entry>
     
