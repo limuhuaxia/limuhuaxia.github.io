@@ -6,7 +6,7 @@
   <link href="https://limuhuaxia.github.io/atom.xml" rel="self"/>
   
   <link href="https://limuhuaxia.github.io/"/>
-  <updated>2021-12-06T12:34:25.076Z</updated>
+  <updated>2021-12-08T13:11:39.135Z</updated>
   <id>https://limuhuaxia.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>HCIA安全实验</title>
+    <link href="https://limuhuaxia.github.io/2021/12/08/HCIA%E5%AE%89%E5%85%A8%E5%AE%9E%E9%AA%8C/"/>
+    <id>https://limuhuaxia.github.io/2021/12/08/HCIA%E5%AE%89%E5%85%A8%E5%AE%9E%E9%AA%8C/</id>
+    <published>2021-12-08T13:11:39.134Z</published>
+    <updated>2021-12-08T13:11:39.135Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="实验一（接入网络设备）"><a href="#实验一（接入网络设备）" class="headerlink" title="实验一（接入网络设备）"></a>实验一（接入网络设备）</h4><h6 id="实验目的"><a href="#实验目的" class="headerlink" title="实验目的"></a>实验目的</h6><p>​        掌握PC远程登录防火墙的技能</p><h6 id="实验top图"><a href="#实验top图" class="headerlink" title="实验top图"></a>实验top图</h6><img src="C:\Users\立木花下\AppData\Roaming\Typora\typora-user-images\image-20211208205203804.png" alt="image-20211208205203804" style="zoom: 50%;" /><h6 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h6><p>1.选择一张虚拟网卡（一般用VM的），并在云上配置如下图</p><img src="C:\Users\立木花下\AppData\Roaming\Typora\typora-user-images\image-20211208205517753.png" alt="image-20211208205517753" style="zoom:50%;" /><p>2.登录防火墙，默认用户admin，默认密码Admin@123，登陆后必须改密码</p><p>3.进入到G0/0/0接口，这是管理口，连接时必须保证防火墙一端的接口是G0/0/0,修改IP地址与网卡在同一网段内，并放通HTTP服务。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">int g0/0/0</span><br><span class="line">ip address 192.168.16.254 24</span><br><span class="line">service-manage all permit (习惯全部放通)</span><br></pre></td></tr></table></figure><img src="C:\Users\立木花下\AppData\Roaming\Typora\typora-user-images\image-20211208210817446.png" alt="image-20211208210817446" style="zoom: 33%;" /><p>4.在浏览器输入G0/0/0接口的IP地址，点击‘高级’，点击‘继续访问’，输入账号和修改后的密码</p><p><img src="C:\Users\立木花下\AppData\Roaming\Typora\typora-user-images\image-20211208211105314.png" alt="image-20211208211105314"></p><p>然后你就进来了</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h4 id=&quot;实验一（接入网络设备）&quot;&gt;&lt;a href=&quot;#实验一（接入网络设备）&quot; class=&quot;headerlink&quot; title=&quot;实验一（接入网络设备）&quot;&gt;&lt;/a&gt;实验一（接入网络设备）&lt;/h4&gt;&lt;h6 id=&quot;实验目的&quot;&gt;&lt;a href=&quot;#实验目的&quot; class=&quot;</summary>
+      
+    
+    
+    
+    <category term="安全" scheme="https://limuhuaxia.github.io/categories/%E5%AE%89%E5%85%A8/"/>
+    
+    
+    <category term="安全" scheme="https://limuhuaxia.github.io/tags/%E5%AE%89%E5%85%A8/"/>
+    
+    <category term="实验" scheme="https://limuhuaxia.github.io/tags/%E5%AE%9E%E9%AA%8C/"/>
+    
+  </entry>
   
   <entry>
     <title>Typora</title>
