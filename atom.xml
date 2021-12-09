@@ -6,7 +6,7 @@
   <link href="https://limuhuaxia.github.io/atom.xml" rel="self"/>
   
   <link href="https://limuhuaxia.github.io/"/>
-  <updated>2021-12-09T01:53:05.891Z</updated>
+  <updated>2021-12-09T02:44:34.376Z</updated>
   <id>https://limuhuaxia.github.io/</id>
   
   <author>
@@ -18,12 +18,12 @@
   
   <entry>
     <title>HCIA安全实验</title>
-    <link href="https://limuhuaxia.github.io/2021/12/08/HCIA%E5%AE%89%E5%85%A8%E5%AE%9E%E9%AA%8C/"/>
-    <id>https://limuhuaxia.github.io/2021/12/08/HCIA%E5%AE%89%E5%85%A8%E5%AE%9E%E9%AA%8C/</id>
-    <published>2021-12-08T13:11:39.134Z</published>
-    <updated>2021-12-09T01:53:05.891Z</updated>
+    <link href="https://limuhuaxia.github.io/2021/12/09/HCIA%E5%AE%89%E5%85%A8%E5%AE%9E%E9%AA%8C/"/>
+    <id>https://limuhuaxia.github.io/2021/12/09/HCIA%E5%AE%89%E5%85%A8%E5%AE%9E%E9%AA%8C/</id>
+    <published>2021-12-08T16:00:00.000Z</published>
+    <updated>2021-12-09T02:44:34.376Z</updated>
     
-    <content type="html"><![CDATA[<h4 id="实验一（接入网络设备）"><a href="#实验一（接入网络设备）" class="headerlink" title="实验一（接入网络设备）"></a>实验一（接入网络设备）</h4><h6 id="实验目的"><a href="#实验目的" class="headerlink" title="实验目的"></a>实验目的</h6><p>​        掌握PC远程登录防火墙的技能</p><h6 id="实验top图"><a href="#实验top图" class="headerlink" title="实验top图"></a>实验top图</h6><img src="F:\boke\blogger\blog\blogs\source\img\image-20211208205203804.png" alt="image-20211208205203804" style="zoom: 50%;" /><h6 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h6><p>1.选择一张虚拟网卡（一般用VM的），并在云上配置如下图</p><img src="F:\boke\blogger\blog\blogs\source\img\image-20211208205517753.png" alt="image-20211208205517753" style="zoom:50%;" /><p>2.登录防火墙，默认用户admin，默认密码Admin@123，登陆后必须改密码</p><p>3.进入到G0/0/0接口，这是管理口，连接时必须保证防火墙一端的接口是G0/0/0,修改IP地址与网卡在同一网段内，并放通HTTP服务。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">int g0/0/0</span><br><span class="line">ip address 192.168.16.254 24</span><br><span class="line">service-manage all permit (习惯全部放通)</span><br></pre></td></tr></table></figure><img src="F:\boke\blogger\blog\blogs\source\img\image-20211208210817446.png" alt="image-20211208210817446" style="zoom: 33%;" /><p>4.在浏览器输入G0/0/0接口的IP地址，点击‘高级’，点击‘继续访问’，输入账号和修改后的密码</p><p><img src="F:\boke\blogger\blog\blogs\source\img\image-20211208211105314.png" alt="image-20211208211105314"></p><p>然后你就进来了</p><h4 id="实验二（防火墙基础配置）"><a href="#实验二（防火墙基础配置）" class="headerlink" title="实验二（防火墙基础配置）"></a>实验二（防火墙基础配置）</h4><h6 id="实验目的-1"><a href="#实验目的-1" class="headerlink" title="实验目的"></a>实验目的</h6><ul><li>   掌握设备命名的方法</li><li>   掌握配置设备时间的方法</li><li>   掌握配置文件备份和恢复</li></ul><h6 id="实验TOP图"><a href="#实验TOP图" class="headerlink" title="实验TOP图"></a>实验TOP图</h6><p>​    </p>]]></content>
+    <content type="html"><![CDATA[<h4 id="实验一（接入网络设备）"><a href="#实验一（接入网络设备）" class="headerlink" title="实验一（接入网络设备）"></a>实验一（接入网络设备）</h4><h6 id="实验目的"><a href="#实验目的" class="headerlink" title="实验目的"></a>实验目的</h6><p>​        掌握PC远程登录防火墙的技能</p><h6 id="实验top图"><a href="#实验top图" class="headerlink" title="实验top图"></a>实验top图</h6><img src="https://limuhuaxia.github.io//img/image-20211208205203804.png" alt="实验一top图" style="zoom: 50%;" /><h6 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h6><p>1.选择一张虚拟网卡（一般用VM的），并在云上配置如下图</p><img src="https://limuhuaxia.github.io//img/image-20211208205517753.png" alt="云的配置" style="zoom:50%;" /><p>2.登录防火墙，默认用户admin，默认密码Admin@123，登陆后必须改密码</p><p>3.进入到G0/0/0接口，这是管理口，连接时必须保证防火墙一端的接口是G0/0/0,修改IP地址与网卡在同一网段内，并放通HTTP服务。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">int g0/0/0</span><br><span class="line">ip address 192.168.16.254 24</span><br><span class="line">service-manage all permit (习惯全部放通)</span><br></pre></td></tr></table></figure><img src="https://limuhuaxia.github.io//img/image-20211208210817446.png" alt="web防火墙" style="zoom: 33%;" /><p>4.在浏览器输入G0/0/0接口的IP地址，点击‘高级’，点击‘继续访问’，输入账号和修改后的密码</p><img src="https://limuhuaxia.github.io//img/image-20211208211105314.png" alt="网络" style="zoom:33%;" /><p>然后你就进来了</p><h4 id="实验二（防火墙基础配置）"><a href="#实验二（防火墙基础配置）" class="headerlink" title="实验二（防火墙基础配置）"></a>实验二（防火墙基础配置）</h4><h6 id="实验目的-1"><a href="#实验目的-1" class="headerlink" title="实验目的"></a>实验目的</h6><ul><li>   掌握设备命名的方法</li><li>   掌握配置设备时间的方法</li><li>   掌握配置文件备份和恢复</li></ul><h6 id="实验TOP图"><a href="#实验TOP图" class="headerlink" title="实验TOP图"></a>实验TOP图</h6><p>​    </p>]]></content>
     
     
       
