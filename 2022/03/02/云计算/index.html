@@ -1,0 +1,1837 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>云计算 | limuのArknights</title><meta name="author" content="limu"><meta name="copyright" content="limu"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="云计算高级特性兼容行业操作系统 要求产商需提供配套的PV驱动，华为有相应的开发能力。  目前支持Linux、Windows、ubantu、fedoras、中标麒麟和私人定制。   灵活管理架构   每个逻辑集群支持128物理机，适用于高性能、大规模业务群部署，降低冗余物理机比例 每逻辑集群支持8,000台虚拟机 ，适合桌面云等规模大、性能要求不高业务部署高可用性设计，VRM (虚拟化部署或者物理部">
+<meta property="og:type" content="article">
+<meta property="og:title" content="云计算">
+<meta property="og:url" content="https://limuhuaxia.github.io/2022/03/02/%E4%BA%91%E8%AE%A1%E7%AE%97/index.html">
+<meta property="og:site_name" content="limuのArknights">
+<meta property="og:description" content="云计算高级特性兼容行业操作系统 要求产商需提供配套的PV驱动，华为有相应的开发能力。  目前支持Linux、Windows、ubantu、fedoras、中标麒麟和私人定制。   灵活管理架构   每个逻辑集群支持128物理机，适用于高性能、大规模业务群部署，降低冗余物理机比例 每逻辑集群支持8,000台虚拟机 ，适合桌面云等规模大、性能要求不高业务部署高可用性设计，VRM (虚拟化部署或者物理部">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg">
+<meta property="article:published_time" content="2022-03-02T03:18:29.799Z">
+<meta property="article:modified_time" content="2022-03-30T08:54:40.054Z">
+<meta property="article:author" content="limu">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg"><link rel="shortcut icon" href="/img/logo.png"><link rel="canonical" href="https://limuhuaxia.github.io/2022/03/02/%E4%BA%91%E8%AE%A1%E7%AE%97/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '云计算',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-03-30 16:54:40'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="limuのArknights" type="application/atom+xml">
+</head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/head.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">6</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">8</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 方舟</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-plane"></i><span> 番剧</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 我</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">limuのArknights</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 方舟</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-plane"></i><span> 番剧</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 我</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">云计算</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-03-02T03:18:29.799Z" title="发表于 2022-03-02 11:18:29">2022-03-02</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-03-30T08:54:40.054Z" title="更新于 2022-03-30 16:54:40">2022-03-30</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="云计算"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h4 id="云计算高级特性"><a href="#云计算高级特性" class="headerlink" title="云计算高级特性"></a>云计算高级特性</h4><h5 id="兼容行业操作系统"><a href="#兼容行业操作系统" class="headerlink" title="兼容行业操作系统"></a>兼容行业操作系统</h5><ul>
+<li><p>要求产商需提供配套的PV驱动，华为有相应的开发能力。</p>
+</li>
+<li><p>目前支持Linux、Windows、ubantu、fedoras、中标麒麟和私人定制。</p>
+</li>
+</ul>
+<h5 id="灵活管理架构"><a href="#灵活管理架构" class="headerlink" title="灵活管理架构"></a>灵活管理架构</h5><img src="https://cdn.jsdelivr.net/gh/limuhuaxia/picgo/img/202203021125506.png" alt="image-20220302112502458" style="zoom:67%;" />
+
+<ul>
+<li>每个逻辑集群支持128物理机，适用于高性能、大规模业务群部署，降低冗余物理机比例</li>
+<li>每逻辑集群支持8,000台虚拟机 ，适合桌面云等规模大、性能要求不高业务部署<br>高可用性设计，VRM (虚拟化部署或者物理部署)主备部署，保证系统</li>
+</ul>
+<p>GPU虚拟化</p>
+<ul>
+<li>目前支持英伟达少数类型GPU</li>
+</ul>
+<h5 id="在线调整CPU和内存"><a href="#在线调整CPU和内存" class="headerlink" title="在线调整CPU和内存"></a>在线调整CPU和内存</h5><ul>
+<li><p>技术原理</p>
+<ul>
+<li>vRAM（虚拟内存）、VCPU支持离线添加、删除，支持在线添加</li>
+</ul>
+</li>
+<li><p>技术特点</p>
+<ul>
+<li>支持再虚拟机运行情况下调整CPU和内存规格，虚拟机不需要重启即可生效</li>
+</ul>
+</li>
+<li><p>适用场景</p>
+<ul>
+<li>根据业务，灵活调整CPU、内存数量</li>
+</ul>
+</li>
+<li><p>应用价值</p>
+<ul>
+<li>根据虚拟机的需求，灵活调整其配置</li>
+<li>纵向扩展有效保证单个虚拟机QoS</li>
+<li>与横向扩展有机结合，保证集群QoS</li>
+</ul>
+</li>
+</ul>
+<h4 id="主机内存超额分配"><a href="#主机内存超额分配" class="headerlink" title="主机内存超额分配"></a>主机内存超额分配</h4><ul>
+<li>又叫内存复用，实现内存超额分配</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/limuhuaxia/picgo/img/202203021138692.png" alt="image-20220302113833641"></p>
+<ul>
+<li>技术特点<ul>
+<li>复用比一般在120%~150%之间是正常的</li>
+</ul>
+</li>
+<li>拓展<ul>
+<li>Windows＝＝＞虚拟内存</li>
+<li>Linux＝＝＞Swap</li>
+</ul>
+</li>
+</ul>
+<h5 id="NNMA亲和度"><a href="#NNMA亲和度" class="headerlink" title="NNMA亲和度"></a>NNMA亲和度</h5><img src="https://cdn.jsdelivr.net/gh/limuhuaxia/picgo/img/202203021148270.png" alt="image-20220302114819220" style="zoom:67%;" />
+
+<ul>
+<li>解决CPU与内存之间的最佳兼容性（最优性能）问题</li>
+<li>系统会根据虚拟机配置、NUMA高级参数以及物理主机NUMA配置自动计算虚拟机NUMA拓扑结构并设置虚拟机NUMA与物理NUMA亲和性，使虚拟机内存访问性能达到最优。</li>
+<li>NUMA（非统一内存访问架构）UMA（统一内存访问架构）</li>
+<li>UMA是<strong>SMP计算机采用的存储器架构</strong>，因此SMP系统有时也被称为UMA架构系统</li>
+<li>Node：这里指CPU和内存一起作为控制节点 </li>
+</ul>
+<h5 id="虚拟机HA（集群的高可用特性）"><a href="#虚拟机HA（集群的高可用特性）" class="headerlink" title="虚拟机HA（集群的高可用特性）"></a>虚拟机HA（集群的高可用特性）</h5><ul>
+<li><p>作用</p>
+<ul>
+<li>一个集群内一个主机发生故障中断时可以在另外一台主机恢复业务。</li>
+</ul>
+</li>
+<li><p>要求</p>
+<ul>
+<li>需要用到共享存储，需要HA对象拥有足够的资源</li>
+</ul>
+</li>
+</ul>
+<h5 id="虚拟机的热迁移"><a href="#虚拟机的热迁移" class="headerlink" title="虚拟机的热迁移"></a>虚拟机的热迁移</h5><ul>
+<li><p>定义</p>
+<ul>
+<li>虚拟机业务不中断的情况下将虚拟机从一台主机迁移到另一台虚拟机（实际中断，用户无感知，时间很短）</li>
+</ul>
+</li>
+<li><p>分类-</p>
+<ul>
+<li>主机</li>
+<li>存储</li>
+<li>主机和存储（完整迁移）</li>
+</ul>
+</li>
+<li><p>条件</p>
+<ul>
+<li>需要虚拟机安装Tools且正常运行</li>
+<li>虚拟机处于运行状态</li>
+<li>虚拟机和物理主机不存在绑定状态</li>
+<li>需要用到共享存储，需要HA对象拥有足够的资源</li>
+</ul>
+</li>
+<li><p>实质</p>
+<ul>
+<li>同步虚拟机配置文件，新建一个虚拟机，同步内存，直至完全迁移</li>
+</ul>
+</li>
+<li><p>失败原因</p>
+<ul>
+<li>网络故障、目标主机资源不足、目标主机故障、CPU不兼容</li>
+</ul>
+</li>
+<li><p>注意</p>
+<ul>
+<li>VRM不允许迁移<ul>
+<li>它绑定了主机</li>
+<li>它使用的磁盘是本地的磁盘（非共享资源）</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h5 id="规则组优先级"><a href="#规则组优先级" class="headerlink" title="规则组优先级"></a>规则组优先级</h5><ul>
+<li>DPM—&gt;系统调度—&gt;DRS</li>
+</ul>
+<h5 id="DPM分布式电源管理"><a href="#DPM分布式电源管理" class="headerlink" title="DPM分布式电源管理"></a>DPM分布式电源管理</h5><ul>
+<li>作用<ul>
+<li>实现服务器自动上下电</li>
+<li>需要和服务器的BMC模块关联（局限）</li>
+</ul>
+</li>
+</ul>
+<h4 id="动态资源调度（DRS）"><a href="#动态资源调度（DRS）" class="headerlink" title="动态资源调度（DRS）"></a>动态资源调度（DRS）</h4><p>旱的旱死，涝的涝死</p>
+<p>作用：削峰填谷，避免高峰期的拥塞；负载均衡</p>
+<p>失败原因：与热迁移类似</p>
+<p>聚集、互斥、虚拟机到主机</p>
+<h5 id="IMC集群的策略（目前支持Intel）"><a href="#IMC集群的策略（目前支持Intel）" class="headerlink" title="IMC集群的策略（目前支持Intel）"></a>IMC集群的策略（目前支持Intel）</h5><ul>
+<li><p>可以在不同CPU类型的主机之间进行迁移</p>
+</li>
+<li><p>要求</p>
+<ul>
+<li><p>集群下的CPU功能集必须高于设置的目标基准功能集</p>
+</li>
+<li><p>集群下运行或休眠状态的虚拟机CPU功能集必须等于或低于目标基准功能集，不满足的迁出</p>
+</li>
+</ul>
+</li>
+</ul>
+<h5 id="规则组（DRS规则组）"><a href="#规则组（DRS规则组）" class="headerlink" title="规则组（DRS规则组）"></a>规则组（DRS规则组）</h5><ul>
+<li><p>优先级</p>
+<ul>
+<li>虚拟机必须在</li>
+<li>虚拟机不能在</li>
+<li>聚集虚拟机</li>
+<li>互斥虚拟机</li>
+<li>虚拟机应该在</li>
+<li>虚拟机应该不在</li>
+</ul>
+</li>
+<li><p>聚集虚拟机</p>
+<ul>
+<li>把几台虚拟机绑定在一起，一般用于业务关联的情况</li>
+</ul>
+</li>
+<li><p>互斥虚拟机</p>
+<ul>
+<li>一般用于主备</li>
+</ul>
+</li>
+<li><p>虚拟机到主机</p>
+<ul>
+<li><p>虚拟机必须在</p>
+<ul>
+<li>不能迁移走</li>
+</ul>
+</li>
+<li><p>虚拟机不能在</p>
+<ul>
+<li>不能迁移来</li>
+</ul>
+</li>
+<li><p>虚拟机应该在</p>
+<ul>
+<li>虚拟机应该在，可能不在</li>
+</ul>
+</li>
+<li><p>虚拟机应该不在</p>
+<ul>
+<li>虚拟机应该不在，可能在</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>注意</p>
+<ul>
+<li>一台虚拟机只能加入一个聚集或一个互斥规则组，但可以同时加入聚集和互斥</li>
+</ul>
+</li>
+</ul>
+<h5 id="CPU复用"><a href="#CPU复用" class="headerlink" title="CPU复用"></a>CPU复用</h5><ul>
+<li>在计算的使用中，CPU默认就是复用的，一个指令处理</li>
+</ul>
+<p><em><strong>存储虚拟化概念及相关技术</strong></em>*</p>
+<ul>
+<li><p> 存储资源</p>
+</li>
+<li><p>通过添加获得</p>
+</li>
+<li><p>存储资源表示物理存储设备</p>
+</li>
+<li><p>IP-SAN、FC-SAN（不支持直接添加）、NAS、FusionStorage（分布式存储）</p>
+</li>
+<li><p>存储设备</p>
+<ul>
+<li><p>只能通过扫描获得</p>
+</li>
+<li><p>存储设备表示存储资源中的管理单元</p>
+</li>
+<li><p>LUN、Fusion Storage存储池、NAS共享目录等</p>
+</li>
+</ul>
+</li>
+<li><p>数据存储</p>
+<ul>
+<li><p>通过存储设备封装（格式化）获得</p>
+</li>
+<li><p>逻辑化数据存储为可用的虚拟磁盘</p>
+</li>
+</ul>
+</li>
+<li><p>非虚拟化存储和虚拟化存储</p>
+<ul>
+<li>有无文件系统，有的是虚拟化存储，无的是非虚拟化存储</li>
+</ul>
+</li>
+</ul>
+<h5 id="Fusion-Compute存储虚拟化架构"><a href="#Fusion-Compute存储虚拟化架构" class="headerlink" title="Fusion Compute存储虚拟化架构"></a>Fusion Compute存储虚拟化架构</h5><ul>
+<li>QEMU：提供I/O设备的联通</li>
+<li>镜像文件：实际为IMG格式</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/limuhuaxia/picgo/img/202203021715228.jpg" alt="img"> </p>
+<h5 id="VIMS虚拟集群存储文件系统"><a href="#VIMS虚拟集群存储文件系统" class="headerlink" title="VIMS虚拟集群存储文件系统"></a>VIMS虚拟集群存储文件系统</h5><ul>
+<li>存在虚拟机与存储资源之间，是Fusion Compute的集群文件系统，提供存储热迁移、DRS和HoghAvailability等服务。</li>
+</ul>
+<h6 id="VIMS分布式锁"><a href="#VIMS分布式锁" class="headerlink" title="VIMS分布式锁"></a>VIMS分布式锁</h6><ul>
+<li><p>一个VIMS可以被多个CNA节点访问。</p>
+</li>
+<li><p>成为master的方式</p>
+<ul>
+<li><p>谁先访问到这份文件谁就是这份文件的管理者</p>
+</li>
+<li><p>如果多节点同时访问，节点ID小的为master</p>
+</li>
+</ul>
+</li>
+</ul>
+<h6 id="VIMS心跳"><a href="#VIMS心跳" class="headerlink" title="VIMS心跳"></a>VIMS心跳</h6><ul>
+<li>磁盘心跳用于检测正常读写</li>
+<li>网络心跳用于检测网络是否可达</li>
+<li>每一个master只对应一个锁资源</li>
+<li>当节点发生故障时，此节点负责管理的资源会重新选举出master。</li>
+<li>VIMS分布式文件锁流量默认走网络管理平面。</li>
+</ul>
+<h5 id="Fusion-Compute磁盘技术"><a href="#Fusion-Compute磁盘技术" class="headerlink" title="Fusion Compute磁盘技术"></a>Fusion Compute磁盘技术</h5><ul>
+<li><p>性能分类</p>
+<ul>
+<li><p>普通磁盘</p>
+<ul>
+<li><p>创建方式填就是0操作，占用空间大，制备时间长</p>
+</li>
+<li><p>能够提供最好的性能和数据安全性</p>
+</li>
+<li><p>适用于IOPS（读写）要求较高的场景。</p>
+</li>
+</ul>
+</li>
+<li><p>普通延迟磁盘</p>
+<ul>
+<li><p>与普通磁盘类似，但不会填0，也就不会清除数据，同时也能节省时间</p>
+</li>
+<li><p>适用于发放速度快对IOPS要求不高的场景</p>
+</li>
+<li><p>写前置0，不是没0</p>
+</li>
+</ul>
+</li>
+<li><p>精简磁盘</p>
+<ul>
+<li><p>创建空间不会为0（有元数据）</p>
+</li>
+<li><p>空间取决你要用多少，类似你用的时候它再给你</p>
+</li>
+<li><p>提供磁盘利用率，是个动态磁盘</p>
+</li>
+</ul>
+</li>
+<li><p>差分磁盘</p>
+<ul>
+<li><p>不能直接新建，必须基于已有的父磁盘来创建</p>
+</li>
+<li><p>差分磁盘用于对父磁盘修改，不影响父磁盘，但是父磁盘修改后差分磁盘不可用</p>
+</li>
+<li><p>差分磁盘不能脱离父盘</p>
+</li>
+<li><p>修改、删除旨在差分磁盘中记录，读则重定向到父盘</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>安全分类</p>
+<ul>
+<li><p>持久化</p>
+<ul>
+<li><p>独立：不受快照影响</p>
+</li>
+<li><p>持久：永久写入、永久保存</p>
+</li>
+</ul>
+</li>
+<li><p>非持久化</p>
+<ul>
+<li><p>数据不永久保存</p>
+</li>
+<li><p>非持久化磁盘创建差分磁盘，断电重启后还原</p>
+</li>
+<li><p>先创建持久化，在转为持久化</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>裸设备映射</p>
+<ul>
+<li>将物理磁盘直接映射给虚拟机用，一步到位</li>
+</ul>
+</li>
+<li><p>性能优劣</p>
+<ul>
+<li>裸设备&gt;普通&gt;普通延迟&gt;精简</li>
+</ul>
+</li>
+</ul>
+<h5 id="存储虚拟化功能原理"><a href="#存储虚拟化功能原理" class="headerlink" title="存储虚拟化功能原理"></a>存储虚拟化功能原理</h5><h5 id="快照"><a href="#快照" class="headerlink" title="快照"></a>快照</h5><ul>
+<li>将虚拟机某一个时刻的状态保存在磁盘中，可以多次还原到这个状态。</li>
+</ul>
+<h6 id="快照分类"><a href="#快照分类" class="headerlink" title="快照分类"></a>快照分类</h6><ul>
+<li><p>普通快照</p>
+<ul>
+<li>只保存磁盘当中的数据，不保存内存数据</li>
+</ul>
+</li>
+<li><p>一致性快照</p>
+<ul>
+<li>将内存中的数据写入磁盘中再保存</li>
+</ul>
+</li>
+<li><p>内存快照</p>
+<ul>
+<li>将内存中的数据保存</li>
+</ul>
+</li>
+</ul>
+<h6 id="快照原理"><a href="#快照原理" class="headerlink" title="快照原理"></a>快照原理</h6><ul>
+<li><p>创建</p>
+<ul>
+<li><p>就是根据原磁盘创建差分磁盘保存读写</p>
+</li>
+<li><p>再创建就是基于原磁盘和差分磁盘再创建差分磁盘</p>
+</li>
+</ul>
+</li>
+<li><p>还原</p>
+<ul>
+<li>把差分磁盘中的东西删除</li>
+</ul>
+</li>
+<li><p>删除</p>
+<ul>
+<li>将原磁盘和差分磁盘的数据合并</li>
+</ul>
+</li>
+</ul>
+<h6 id="链接克隆"><a href="#链接克隆" class="headerlink" title="链接克隆"></a>链接克隆</h6><ul>
+<li><p>链接克隆</p>
+<ul>
+<li><p>基于一个虚拟机模板发放多个虚拟机，也就是基于原虚拟机创建差分磁盘</p>
+</li>
+<li><p>发放速度快，但性能不如直接克隆</p>
+</li>
+<li><p>将经常读取的数据放在内存，方便读取 </p>
+</li>
+</ul>
+</li>
+</ul>
+<h6 id="存储热迁移"><a href="#存储热迁移" class="headerlink" title="存储热迁移"></a>存储热迁移</h6><ul>
+<li>目的磁盘创建差分磁盘，过程中还可以进行操作，再将原磁盘数据合并过去</li>
+<li>冷迁移是关机时迁移过去</li>
+</ul>
+<h6 id="存储资源裸设备映射"><a href="#存储资源裸设备映射" class="headerlink" title="存储资源裸设备映射"></a>存储资源裸设备映射</h6><ul>
+<li>RDM为虚拟机提供一种机制来张子杰访问物理存储子系统（仅限光纤或iSCSI）上的LUN</li>
+</ul>
+<h6 id="存储扩容"><a href="#存储扩容" class="headerlink" title="存储扩容"></a>存储扩容</h6><ul>
+<li><p>离线扩容</p>
+</li>
+<li><p>在线扩容</p>
+</li>
+<li><p>本地硬盘不支持扩容</p>
+</li>
+</ul>
+<p>数据存储扩容原理</p>
+<ul>
+<li>当需要扩容时，先在主节点上将新增的存储空间以线性映射的方式追加至虚拟块设备末尾，完成虚拟块设备的扩容后，再将新增的存储空间分成数段逐渐增加至文件系统 (更新文件系统中的元数据)，主节点完成数据存储的扩容。由于虚拟块设备的信息都是保存在节点内存中，则当其它节点发现数据存储空间有变化时，则需要更新虚拟块设备信息，完成扩容虚拟块设备。</li>
+</ul>
+<h4 id="Fusion-Compute网络虚拟化"><a href="#Fusion-Compute网络虚拟化" class="headerlink" title="Fusion Compute网络虚拟化"></a>Fusion Compute网络虚拟化</h4><h6 id="网络虚拟化相关概念及技术"><a href="#网络虚拟化相关概念及技术" class="headerlink" title="网络虚拟化相关概念及技术"></a>网络虚拟化相关概念及技术</h6><ul>
+<li><p>计算机虚拟化驱动网络虚拟化的发展</p>
+</li>
+<li><ul>
+<li>分布式交换机</li>
+</ul>
+</li>
+<li><p>Linux Bridge（网桥）</p>
+</li>
+<li><ul>
+<li>工作与二层的虚拟网络设备，功能类似物理交换机</li>
+<li>缺点：没有MAC表，不能划分VALN</li>
+</ul>
+</li>
+<li><p>OVS（开放式虚拟交换机）</p>
+</li>
+<li><ul>
+<li>开源的虚拟以太网交换机</li>
+<li>支持多种标准管理接口和协议</li>
+<li>作用：传递VM之间的流量，实现VM与外界网络的通信</li>
+</ul>
+</li>
+<li><p>Bridge做不到的</p>
+</li>
+<li><ul>
+<li>状态可移植：VM之间的配置可以互相识别</li>
+<li>适应动态网络：迁移技术中网络变换</li>
+<li>逻辑标签维护：支持VALN的设置</li>
+<li>支持硬件集成：可以直接流向硬件</li>
+</ul>
+</li>
+<li><p>EVS</p>
+</li>
+<li><ul>
+<li>基于OVS开发</li>
+<li>借助DPDK（网络交换协议）的网卡管理API和大页内存</li>
+<li>只存在一个主机上</li>
+</ul>
+</li>
+<li><p>DVS</p>
+</li>
+<li><ul>
+<li>可以在逻辑上跨主机存在，即多个VM可以连接一个DVS，连接EVS</li>
+</ul>
+</li>
+<li><p>华为分布式交换方案</p>
+</li>
+<li><p>Fusion Compute分布式交换机</p>
+</li>
+<li><ul>
+<li>端口组：具有相同属性</li>
+<li>VALN：用于隔离</li>
+<li>上行链路：连接DVS和物理网口</li>
+</ul>
+</li>
+<li><p>虚拟机通信</p>
+</li>
+<li><ul>
+<li>跨VLAN需要3层物理交换机</li>
+<li>不同DVS连接不同上行链路</li>
+<li>一个上行链路只能连接一个DVS，为了在物理层面隔离</li>
+</ul>
+</li>
+<li><p>OVS/DVS/EVS的区别</p>
+</li>
+<li><ul>
+<li>OVS：基于软件的虚拟的开源的交换机</li>
+<li>DVS：分布式虚拟交换机，在逻辑上跨主机</li>
+<li>EVS：弹性虚拟交换机，华为对OVS增强型</li>
+<li>DVS—&gt;EVS—&gt;OVS</li>
+</ul>
+</li>
+</ul>
+<h6 id="网络虚拟化功能特性"><a href="#网络虚拟化功能特性" class="headerlink" title="网络虚拟化功能特性"></a>网络虚拟化功能特性</h6><ul>
+<li><p>华为虚拟交换模式</p>
+</li>
+<li><ul>
+<li><p>普通模式</p>
+</li>
+<li><ul>
+<li>VM连接DVS通过接口进行交换</li>
+</ul>
+</li>
+<li><p>SR-LOV直通模式</p>
+</li>
+<li><ul>
+<li>通过VMM的PCL（硬件管理器）直接使用物理硬件上的接口（需要网卡支持）</li>
+</ul>
+</li>
+<li><p>用户态交换模式</p>
+</li>
+<li><ul>
+<li>使用DPDK（数据平面开发工具）</li>
+<li>需要特定网卡支持</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h6 id="二层网络安全策略"><a href="#二层网络安全策略" class="headerlink" title="二层网络安全策略"></a>二层网络安全策略</h6><ul>
+<li><ul>
+<li><p>就是IP和MAC地址的绑定</p>
+</li>
+<li><p>DHCP隔离：只使用一个DHCP服务器并且指定</p>
+</li>
+<li><p>广播报文抑制：限制虚拟机方向的广播报文对带宽的消耗</p>
+</li>
+<li><p>安全组</p>
+</li>
+<li><ul>
+<li><p>即设定一组访问规则，虚拟机的一个网卡只能加一个安全组，但是虚拟机可以有多个网卡，所有虚拟机可以有多个安全组</p>
+</li>
+<li><p>一个安全组最大有50条规则</p>
+</li>
+<li><p>注意：</p>
+</li>
+<li><ul>
+<li>只能有50条</li>
+<li>对网卡生效</li>
+<li>状态必须为关机</li>
+<li>安全组支持普通交换模式</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Trunk口</p>
+</li>
+<li><ul>
+<li><p>端口组有两种类型</p>
+</li>
+<li><ul>
+<li><p>普通</p>
+</li>
+<li><ul>
+<li>只允许一个vlan</li>
+</ul>
+</li>
+<li><p>中继</p>
+</li>
+<li><ul>
+<li>类似trunk口，但中继口无PVID，所以不放行无标数据</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>网络Qos</p>
+</li>
+<li><ul>
+<li><p>作用</p>
+</li>
+<li><ul>
+<li>带宽控制功能</li>
+<li>流量整型</li>
+</ul>
+</li>
+<li><p>带宽</p>
+</li>
+<li><ul>
+<li><p>平均</p>
+</li>
+<li><ul>
+<li>可以超过可以低于</li>
+</ul>
+</li>
+<li><p>突发</p>
+</li>
+<li><p>峰值</p>
+</li>
+<li><ul>
+<li>最高</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>注意</p>
+</li>
+<li><ul>
+<li>用户态不能设置Qos</li>
+<li>直通模式不能设置平均之外的模式</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>网口绑定</p>
+</li>
+<li><ul>
+<li><p>聚合网口</p>
+</li>
+<li><ul>
+<li>将多个网口绑在一起，提高网络可靠性</li>
+<li>提高网络带宽</li>
+<li>双向绑定，IACP（链路聚合）</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p> 集群管理</p>
+<ul>
+<li><p>监控集群</p>
+</li>
+<li><ul>
+<li>查看集群运行状态</li>
+</ul>
+</li>
+<li><p>配置集群属性</p>
+</li>
+<li><ul>
+<li>内存复用、HA</li>
+</ul>
+</li>
+<li><p>配置资源调度策略</p>
+</li>
+<li><ul>
+<li>合理使用资源</li>
+</ul>
+</li>
+<li><p>主机故障</p>
+</li>
+<li><ul>
+<li><p>原主机恢复虚拟机</p>
+</li>
+<li><ul>
+<li>等物理机恢复后，才会在原地重启虚拟机</li>
+</ul>
+</li>
+<li><p>HA虚拟机</p>
+</li>
+<li><ul>
+<li>根据策略走</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>虚拟机故障</p>
+</li>
+<li><ul>
+<li>不处理</li>
+</ul>
+</li>
+<li><p>虚拟机启动策略</p>
+</li>
+<li><ul>
+<li><p>负载均衡</p>
+</li>
+<li><ul>
+<li>平均分配</li>
+</ul>
+</li>
+<li><p>自动分配</p>
+</li>
+<li><ul>
+<li>随机选择</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>虚拟机NUMA架构自动调整</p>
+</li>
+<li><ul>
+<li>让CPU和内存来自统一节点，读写速率更快</li>
+</ul>
+</li>
+</ul>
+<p>主机管理</p>
+<ul>
+<li><p>主机监控</p>
+</li>
+<li><p>配置主机属性</p>
+</li>
+<li><ul>
+<li><p>时间同步</p>
+</li>
+<li><ul>
+<li>CNA和VRM还有外部系统时间同步，NTP服务器用于同步时间，外部源（阿里。。。）</li>
+<li>维护模式</li>
+<li>主机上的虚拟机关机或迁移走，已关机的虚拟机不属于任何主机</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>配置主机网口</p>
+</li>
+<li><ul>
+<li><p>网口绑定</p>
+</li>
+<li><ul>
+<li>批量绑定</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>配置主机关联的存储资源</p>
+</li>
+<li><p>添加主机</p>
+</li>
+<li><ul>
+<li>主机的IP地址</li>
+<li>与VRM互通</li>
+</ul>
+</li>
+<li><p>配置主机BMC</p>
+</li>
+<li><ul>
+<li><p>BMC平面：</p>
+</li>
+<li><ul>
+<li>服务器管理平面，会有对服务器的基本操作（上下电）</li>
+</ul>
+</li>
+<li><p>BMC</p>
+</li>
+<li><ul>
+<li>独立的系统，服务器自带的模块</li>
+</ul>
+</li>
+<li><p>支持IPMI协议</p>
+</li>
+<li><ul>
+<li>即可以通过命令行管理服务器</li>
+</ul>
+</li>
+<li><p>BMC参数</p>
+</li>
+<li><ul>
+<li>IP地址、用户名、密码</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>添加存储接口（就是特定网卡）</p>
+</li>
+<li><ul>
+<li>IP地址、名称、vlan</li>
+</ul>
+</li>
+<li><p>开启主机防病毒功能</p>
+</li>
+<li><ul>
+<li>在fusion compute上安装一个防病毒的系统，其他虚拟机都和防病毒虚拟机接连起来，然后防病毒系统在对虚拟机进行病毒查杀，基于防病毒接口（API）</li>
+<li>使用驱动与VM连接，不占用网络资源</li>
+</ul>
+</li>
+<li><p>主机管理配置</p>
+</li>
+<li><ul>
+<li>管理域资源</li>
+<li>大页配置</li>
+<li>用户态交换规格</li>
+<li>BMC配置</li>
+<li>时间同步</li>
+<li>防病毒配置</li>
+</ul>
+</li>
+</ul>
+<p>存储资源管理</p>
+<ul>
+<li>存储资源介绍</li>
+</ul>
+<img src="https://cdn.jsdelivr.net/gh/limuhuaxia/picgo/img/202203091727529.png" alt="image-20220309172658122" style="zoom:67%;" />
+
+ 
+
+<ul>
+<li>存储资源创建过程</li>
+</ul>
+<p>开始，添加心跳平面业务管理接口，添加存储接口，添加存储资源，存储资源关联主机，配置存储空间映射，扫描存储设备，添加数据存储，创建磁盘</p>
+<ul>
+<li><p>Fusion Compute数据存储使用方式</p>
+</li>
+<li><ul>
+<li><p>虚拟化存储</p>
+</li>
+<li><ul>
+<li>格式化为华为的VHD格式 </li>
+</ul>
+</li>
+<li><p>非虚拟化存储</p>
+</li>
+<li><ul>
+<li>即Fusion Storage存储</li>
+</ul>
+</li>
+<li><p>裸设备映射</p>
+</li>
+<li><ul>
+<li>物理虚拟一一对应 </li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>磁盘管理</p>
+</li>
+<li><ul>
+<li><p>磁盘类型</p>
+</li>
+<li><ul>
+<li>普通：单个</li>
+<li>共享：多个</li>
+</ul>
+</li>
+<li><p>配置模式</p>
+</li>
+<li><ul>
+<li>普通</li>
+<li>精简</li>
+<li>延迟置0</li>
+</ul>
+</li>
+<li><p>磁盘模式</p>
+</li>
+<li><ul>
+<li>独立—持久</li>
+<li>独立—非持久</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>网络资源管理</p>
+<p>端口组</p>
+<p>DVS上用于连接虚拟机的端口组（多个端口）</p>
+<p>DVS</p>
+<p>用于在虚拟机与物理网络间搭桥的逻辑的分布式交换机</p>
+<p>上行链路</p>
+<p>DVS上的，连物理交换机的，通过物理网卡联通物理网络</p>
+<p>端口组管理</p>
+<ul>
+<li><p>上行链路</p>
+</li>
+<li><ul>
+<li>一般先新建上行链路</li>
+</ul>
+</li>
+<li><p>端口组</p>
+</li>
+<li><ul>
+<li>一是区分通过vSwitch的流量类型；</li>
+</ul>
+</li>
+<li><ul>
+<li>二是可以充当通信或者安全策略配置的边界。（管理员可以在标准虚拟交换机和端口组级别配置第2层以太网安全选项；其实也可以在端口组级别上覆盖标准虚拟交换机级别所设置的网络策略）</li>
+</ul>
+</li>
+<li><p>VLAN池：VLAN为0不需要新建VLAN池，因为VLAN0默认放行所有</p>
+</li>
+<li><p>安全组管理</p>
+</li>
+<li><ul>
+<li><p>入方向的白名单</p>
+</li>
+<li><p>注意</p>
+</li>
+<li><ul>
+<li>一张网卡只能加入一个安全组</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>虚拟机发放</p>
+<ul>
+<li><p>创建新虚拟机</p>
+</li>
+<li><p>使用模板部署</p>
+</li>
+<li><ul>
+<li>继承：系统类型，版本号，磁盘数量和容量及总线类型，网卡</li>
+<li>更新MAC，SID，可以更改部分内容</li>
+</ul>
+</li>
+<li><p>虚拟机克隆虚拟机</p>
+</li>
+<li><ul>
+<li>一模一样</li>
+</ul>
+</li>
+<li><p>导入虚拟机</p>
+</li>
+<li><ul>
+<li>Ovf</li>
+<li>Ova：包括OVF和VHD</li>
+</ul>
+</li>
+<li><p>模板转为虚拟机</p>
+</li>
+<li><ul>
+<li>将系统中的模板转换为虚拟机，创建完成的虚拟机所有属性和模板相同。</li>
+<li>转换完成后，模板不再存在。</li>
+</ul>
+</li>
+</ul>
+<p>虚拟机管理</p>
+<ul>
+<li><p>虚拟机文件</p>
+</li>
+<li><ul>
+<li>虚拟机在虚拟化平台中至少有两个文件组成，一个是虚拟机配置文件*.xml，一个是虚拟机磁盘文件*.img。</li>
+<li>在用virt-install生成虚拟机时会自动的生成一个默认xml格式的配置文件在/etc/libvirt/qemu目录下，以后需要调整虚拟机参数时可以使用virsh edit VM_ID修改虚拟机配置文件。在初次建立虚拟机时里面的参数都是根据第一次生成虚拟机的配置指定的。</li>
+<li>虚拟机磁盘文件主要有raw和qcow2格式。</li>
+</ul>
+</li>
+<li><p>虚拟机调整</p>
+</li>
+<li><ul>
+<li>调整CPU</li>
+<li>调整内存</li>
+<li>绑定/解绑磁盘</li>
+<li>添加/删除网卡</li>
+<li>挂载/卸载光驱</li>
+<li>修改启动方式</li>
+<li>绑定/解绑USB设备</li>
+</ul>
+</li>
+<li><p>虚拟机回收</p>
+</li>
+<li><ul>
+<li><p>普通删除</p>
+</li>
+<li><ul>
+<li>在文件系统里删除，有恢复的可能性</li>
+</ul>
+</li>
+<li><p>安全删除</p>
+</li>
+<li><ul>
+<li>通过覆盖性擦写对磁盘空间进行删除，避免数据被恢复，安全性高，但删除速度较慢，且删除时会占用系统资源。</li>
+</ul>
+</li>
+<li><p>延时删除</p>
+</li>
+<li><ul>
+<li>给个后悔的机会</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>模板管理</p>
+</li>
+<li><ul>
+<li>制作</li>
+<li>导入</li>
+<li>导出</li>
+<li>删除</li>
+</ul>
+</li>
+<li><p>快照管理</p>
+</li>
+<li><ul>
+<li><p>创建</p>
+</li>
+<li><ul>
+<li>一致性</li>
+<li>普通</li>
+<li>内存</li>
+</ul>
+</li>
+<li><p>回滚</p>
+</li>
+<li><ul>
+<li>还原状态</li>
+</ul>
+</li>
+<li><p>删除</p>
+</li>
+<li><ul>
+<li>删除快照</li>
+</ul>
+</li>
+<li><p>修改</p>
+</li>
+<li><ul>
+<li>名称</li>
+<li>描述信息</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Tools管理</p>
+</li>
+<li><ul>
+<li><p>是虚拟机的驱动程序</p>
+</li>
+<li><p>作用</p>
+</li>
+<li><ul>
+<li>提高虚拟机I/O性能</li>
+<li>满足某些高级特性</li>
+</ul>
+</li>
+<li><p>注意</p>
+</li>
+<li><ul>
+<li>安装方式：挂载光驱</li>
+<li>要求Tools可以运行</li>
+<li>版本匹配</li>
+</ul>
+</li>
+<li><p>动作</p>
+</li>
+<li><ul>
+<li>安装</li>
+<li>查看</li>
+<li>卸载</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>虚拟机防病毒</p>
+</li>
+<li><ul>
+<li>基于主机安装防病毒系统</li>
+<li>虚拟机基于驱动访问防病毒系统</li>
+</ul>
+</li>
+</ul>
+<h3 id="Fusion-Compute日常维护和故障处理"><a href="#Fusion-Compute日常维护和故障处理" class="headerlink" title="Fusion Compute日常维护和故障处理"></a>Fusion Compute日常维护和故障处理</h3><h4 id="维护管理"><a href="#维护管理" class="headerlink" title="维护管理"></a>维护管理</h4><h5 id="日常监控"><a href="#日常监控" class="headerlink" title="日常监控"></a>日常监控</h5><h6 id="日常维护操作（运维）"><a href="#日常维护操作（运维）" class="headerlink" title="日常维护操作（运维）"></a>日常维护操作（运维）</h6><table>
+<thead>
+<tr>
+<th><em><strong>维护项目</strong></em></th>
+<th><em><strong>检查项</strong></em></th>
+<th><em><strong>正常状态</strong></em></th>
+<th align="center"><em><strong>维护周期</strong></em></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><em>查看系统告警</em></td>
+<td><em>FusionCompute上的告警</em></td>
+<td><em>无新增告警</em></td>
+<td align="center"><em>每天</em></td>
+</tr>
+<tr>
+<td><em>检查FusionCompute健康状态</em></td>
+<td><em>健康检查报告</em></td>
+<td><em>无“不合格”检查项</em></td>
+<td align="center"><em>每天</em></td>
+</tr>
+<tr>
+<td><em>检查设备运行状态</em></td>
+<td><em>服务器、交换机和存储设备的指示灯状态</em></td>
+<td><em>指示灯显示正常</em></td>
+<td align="center"><em>每天</em></td>
+</tr>
+<tr>
+<td><em>检查设备运行环境</em></td>
+<td><em>温湿度</em></td>
+<td><em>符合运行环境对温度和湿度的要求。</em></td>
+<td align="center"><em>每周</em></td>
+</tr>
+<tr>
+<td>**</td>
+<td><em>空气质量</em></td>
+<td><em>符合运行环境对空气质量的要求</em></td>
+<td align="center"><em>每周</em></td>
+</tr>
+<tr>
+<td>**</td>
+<td><em>防尘情况</em></td>
+<td><em>无明显尘土附着</em></td>
+<td align="center"><em>每周</em></td>
+</tr>
+<tr>
+<td><em>查看预警整改公告</em></td>
+<td><em>“<a target="_blank" rel="noopener" href="http://support.huawei.com/enterprise%E2%80%9D%EF%BC%8C%E9%80%89%E6%8B%A9%E2%80%9C%E5%85%AC%E5%91%8A">http://support.huawei.com/enterprise”，选择“公告</a> &gt; 产品公告 &gt; 预警公告 &gt; IT &gt; 云计算数据中心 &gt; FusionSphere &gt; FusionSphere”，查看预警整改公告。</em></td>
+<td><em>满足预警通知的要求</em></td>
+<td align="center"><em>每月</em></td>
+</tr>
+</tbody></table>
+<h6 id="查看告警"><a href="#查看告警" class="headerlink" title="查看告警"></a>查看告警</h6><table>
+<thead>
+<tr>
+<th><strong>告警级别</strong></th>
+<th><strong>图标</strong></th>
+<th><strong>说明</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>紧急</td>
+<td></td>
+<td>已经影响业务、需要立即采取纠正措施的告警为紧急告警。</td>
+</tr>
+<tr>
+<td>重要</td>
+<td></td>
+<td>已经影响业务，如果不及时处理会产生较为严重后果的告警为重要告警。</td>
+</tr>
+<tr>
+<td>次要</td>
+<td></td>
+<td>目前对业务没有影响，但需要采取纠正措施，以防止更为严重的故障的发生，这种情况下的告警为次要告警。</td>
+</tr>
+<tr>
+<td>提示</td>
+<td></td>
+<td>检测到潜在的或即将发生的影响业务的故障，但是目前对业务还没有影响，这种情况下的告警为提示告警。</td>
+</tr>
+</tbody></table>
+<h6 id="实时监控"><a href="#实时监控" class="headerlink" title="实时监控"></a>实时监控</h6><blockquote>
+<p>管理员可以查看集群、主机以及虚拟机的监控信息，以便于了解集群在指定时间段内的运行状态</p>
+</blockquote>
+<h6 id="配置管理"><a href="#配置管理" class="headerlink" title="配置管理"></a>配置管理</h6><ul>
+<li><p>​    配置域认证信息</p>
+<ul>
+<li>存储在AD</li>
+</ul>
+</li>
+<li><p>​    更新License</p>
+<ul>
+<li>软件的激活码，根据CPU的数量收费，免费的CPU不超过6个，超过就收费</li>
+</ul>
+</li>
+<li><p>​    修改系统Logo</p>
+<ul>
+<li>换成自己的</li>
+</ul>
+</li>
+<li><p>​    配置登录超时时间</p>
+<ul>
+<li>默认10分钟</li>
+</ul>
+</li>
+<li><p>​    配置资源调度周期</p>
+<ul>
+<li>​    配置SNMP管理站</li>
+</ul>
+</li>
+<li><p>​    接入网管系统</p>
+<ul>
+<li>​    VRM单节点扩展为主备部署</li>
+</ul>
+</li>
+</ul>
+<h6 id="用户管理"><a href="#用户管理" class="headerlink" title="用户管理"></a>用户管理</h6><p>​    分类    </p>
+<p>​        本地用户</p>
+<p>​            一般是管理员</p>
+<p>​        域用户</p>
+<p>​            业务用户</p>
+<p>​        接口对接用户</p>
+<p>​            其他平台对接的用户，比如fusion access</p>
+<h6 id="三员分立"><a href="#三员分立" class="headerlink" title="三员分立"></a>三员分立</h6><table>
+<thead>
+<tr>
+<th><strong>登录模式</strong></th>
+<th><strong>默认账户/密码</strong></th>
+<th><strong>账户权限</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>普通模式</td>
+<td>admin/IaaS@PORTAL-CLOUD8!</td>
+<td>具有系统管理员权限</td>
+</tr>
+<tr>
+<td>三员分立模式</td>
+<td>系统管理员：      sysadmin/Sysadmin#  安全管理员：      secadmin/Secadmin#  安全审计员：      secauditor/Secauditor#</td>
+<td>系统管理员：仅具有系统业务操作维护权限，以及创建、删除用户的权限  安全管理员：仅具有用户、角色的权限管理权，但不能创建用户。  安全审计员:仅有日志查看和日志导出权限，用于对其他用户的操作进行审查。</td>
+</tr>
+</tbody></table>
+<p>Fusion Compute备份与恢复</p>
+<p>在系统重大操作（升级、调整）前，支持对VRM节点的数据进行自动备份和手动备份。</p>
+<p>可以使用ebackup实现备份</p>
+<p>故障管理</p>
+<p>主机和集群故障</p>
+<p>站点故障</p>
+<p>不能使用FC</p>
+<p>不能配置级联</p>
+<p>集群故障</p>
+<p>不能创建集群</p>
+<p>主机故障</p>
+<p>系统接口故障</p>
+<p>系统接口管理</p>
+<ul>
+<li><p>绑定网口</p>
+</li>
+<li><ul>
+<li>绑定主机的网口，以提高网络的可靠性。</li>
+</ul>
+</li>
+<li><p>存储接口</p>
+</li>
+<li><ul>
+<li>在主机中添加存储接口，实现主机与存储设备对接。</li>
+<li>添加多个存储接口，可以实现存储的多路径传输。</li>
+</ul>
+</li>
+<li><p>业务管理接口</p>
+</li>
+<li><ul>
+<li>承载一些特殊业务流量的系统接口，这些特殊业务包括热迁移虚拟机、虚拟机主机容灾、虚拟化SAN存储心跳检测等。</li>
+</ul>
+</li>
+</ul>
+<p>主机和集群创建流程</p>
+<p>创建集群</p>
+<p>向集群添加主机</p>
+<p>设置主机时钟同步</p>
+<p>存储类型（SAN继续，其他跳到最后一步）</p>
+<p>存储设备产商</p>
+<p>修改主机存储多路径</p>
+<p>添加主机存储接口</p>
+<p>网络池创建流程</p>
+<p>创建分布式交换机</p>
+<p>添加上行链路</p>
+<p>添加VLAN池（可选，VLAN0 放行所有）</p>
+<p>添加子网（可选，是否公开访问）</p>
+<p>配置VTEP（可选）</p>
+<p>创建端口组</p>
+<p>存储资源池配置流程</p>
+<p>判断存储设备类型</p>
+<p>添加站点的存储资源</p>
+<p>向主机关联存储资源</p>
+<p>扫描存储设备</p>
+<p>添加数据存储</p>
+<p>创建虚拟磁盘</p>
+<p>虚拟机创建流程</p>
+<p><img src="data:image/png;base64,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" alt="img"></p>
+<p>信息收集</p>
+<ul>
+<li><p>客户信息</p>
+</li>
+<li><p>网路信息（网络拓扑）</p>
+</li>
+<li><p>设备信息</p>
+</li>
+<li><p>软件版本</p>
+</li>
+<li><p>License</p>
+</li>
+<li><p>近期操作</p>
+</li>
+<li><p>日志文件</p>
+</li>
+<li><p>告警信息</p>
+</li>
+</ul>
+<h2 id="Fusion-Access桌面云解决方案"><a href="#Fusion-Access桌面云解决方案" class="headerlink" title="Fusion Access桌面云解决方案"></a>Fusion Access桌面云解决方案</h2><h4 id="桌面云概述"><a href="#桌面云概述" class="headerlink" title="桌面云概述"></a>桌面云概述</h4><ul>
+<li><ul>
+<li>核心述求：效率，安全</li>
+</ul>
+</li>
+</ul>
+<h6 id="传统办公缺陷"><a href="#传统办公缺陷" class="headerlink" title="传统办公缺陷"></a>传统办公缺陷</h6><ul>
+<li><ul>
+<li>数据安全漏洞</li>
+<li>后期运营维护，开支巨大</li>
+<li>固化不灵活，利用率低</li>
+</ul>
+</li>
+</ul>
+<h6 id="桌面云优势"><a href="#桌面云优势" class="headerlink" title="桌面云优势"></a>桌面云优势</h6><ul>
+<li><ul>
+<li><p>数据安全</p>
+</li>
+<li><ul>
+<li>终端与数据隔离，防泄密</li>
+<li>高可靠性架构，防丢失</li>
+</ul>
+</li>
+<li><p>运维效率</p>
+</li>
+<li><ul>
+<li>桌面标准化</li>
+<li>桌面快速发放，集中运维</li>
+</ul>
+</li>
+<li><p>灵活性</p>
+</li>
+<li><ul>
+<li>资源按需调整</li>
+<li>移动办公</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h6 id="价值优势"><a href="#价值优势" class="headerlink" title="价值优势"></a>价值优势</h6><ul>
+<li><ul>
+<li>本地无数据，安全可控</li>
+<li>移动办公，随时随地接入</li>
+<li>简单运维，一人维护超过2000个桌面</li>
+<li>故障快速回复，减少业务中断时间</li>
+</ul>
+</li>
+</ul>
+<h6 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h6><ul>
+<li><ul>
+<li>分支机构</li>
+<li>移动办公</li>
+<li>呼叫中心</li>
+<li>安全办公</li>
+</ul>
+</li>
+<li></li>
+<li><p>桌面云缺点</p>
+</li>
+<li><p>过分依赖网络</p>
+</li>
+<li><p>性能不能物理机</p>
+</li>
+</ul>
+<h4 id="桌面云解决方案"><a href="#桌面云解决方案" class="headerlink" title="桌面云解决方案"></a>桌面云解决方案</h4><h6 id="桌面云架构"><a href="#桌面云架构" class="headerlink" title="桌面云架构"></a>桌面云架构</h6><ul>
+<li><ul>
+<li><p>VDI架构</p>
+</li>
+<li><ul>
+<li>虚拟桌面架构</li>
+<li>计算和数据都在云端</li>
+<li>集中管理，集中运行</li>
+</ul>
+</li>
+<li><p>IDV架构</p>
+</li>
+<li><ul>
+<li>智能桌面虚拟化</li>
+<li>计算和数据还是在终端</li>
+<li>集中管理，分散运行</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h6 id="VDI与IDV"><a href="#VDI与IDV" class="headerlink" title="VDI与IDV"></a>VDI与IDV</h6><p><img src="https://cdn.jsdelivr.net/gh/limuhuaxia/picgo/img/202203301638213.png" alt="image-20220330163809039"></p>
+<ul>
+<li>补：IDV可以关机，并且延迟低，适合快速响应</li>
+<li>VOI：网吧用的架构</li>
+<li>RDS：同时允许多个人使用，共同使用</li>
+</ul>
+<h6 id="Fusion-Access逻辑架构"><a href="#Fusion-Access逻辑架构" class="headerlink" title="Fusion Access逻辑架构"></a>Fusion Access逻辑架构</h6><ul>
+<li>硬件资源层</li>
+<li>云操作系统管理层</li>
+<li>桌面和会话管理层</li>
+<li>终端接入层</li>
+</ul>
+<h6 id="HDP桌面协议介绍"><a href="#HDP桌面协议介绍" class="headerlink" title="HDP桌面协议介绍"></a>HDP桌面协议介绍</h6><ul>
+<li><p>协议介绍</p>
+</li>
+<li><ul>
+<li>（Huawei　Desktop　Protocol）华为桌面协议</li>
+<li>最大支持６４位</li>
+<li>根据不同应用类型采用不同的压缩算法</li>
+<li>视频播放更清晰</li>
+<li>无损压缩算法</li>
+<li>还原声音细节</li>
+<li>丰富协议管理策略</li>
+</ul>
+</li>
+<li><p>HDP总体架构</p>
+</li>
+<li><ul>
+<li><p>HDP客户端</p>
+</li>
+<li><ul>
+<li>PC、软终端</li>
+</ul>
+</li>
+<li><p>HDA服务端</p>
+</li>
+<li><ul>
+<li>虚拟机</li>
+</ul>
+</li>
+<li><p>支持UOS和deep</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>常见桌面协议</p>
+<ul>
+<li><p>ICA／HDX（Citrix，思杰）的虚拟桌面协议</p>
+</li>
+<li><ul>
+<li>广泛的移动终端支持。</li>
+<li>ICA的网络协议无关性，使其可以支持TCP/IP、NetBIOS和IPX/SPX。</li>
+<li>ICA不仅支持Citrix自家的虚拟化平台XenServer，还支持vSphere和Hyper-V。</li>
+<li>性能上比较突出的特点是较低的带宽占用，在网络环境差（延迟高）的情况下也能正常使用。</li>
+</ul>
+</li>
+<li><p>PCoIP（VM ware）</p>
+</li>
+<li><ul>
+<li>PCoIP和硬件结合紧密，数据的编码和解码，图形的处理可以通过专门的硬件来完成，让CPU有精力来做其他的事情，也有专门集成了PCoIP显示芯片的显示器。</li>
+<li>PCoIP是基于UDP协议的，UDP传输不可靠，但是UDP没有TCP的三次握手复杂的校验和数据恢复，传输速度快，适合多媒体的传输。</li>
+<li>原生PCoIP协议没有串并口等外设的重定向能力，但一些TC厂商通过额外的端口重定向插件弥补了其这方面功能的不足。</li>
+</ul>
+</li>
+<li><p>SPICE（KVM，redhead）</p>
+</li>
+<li><ul>
+<li>一款开源虚拟桌面协议，最初是由Qumranet开发，后来被RedHat收购并开源，经过几年的社区开发，SPICE协议不断成熟。</li>
+<li>SPICE协议对于视频具有一定的优越性，其主要原因还是对于显示信息的压缩处理由KVM完成，避免了GuestOS内由于视频压缩对于CPU的过量消耗。SPICE协议采用无损压缩，所以清晰度较高，缺点是带宽较高，消耗的资源较大。</li>
+</ul>
+</li>
+<li><p>RDP／RemoteFX（思杰开发，微软的远程桌面协议）</p>
+</li>
+<li><ul>
+<li>RDP（Remote Desktop Protocol）是微软的远程桌面协议，最初是由Citrix开发，支持的功能较少，且主要应用在Windows环境中，现在也有Mac下的RDP客户端和Linux下的RDP客户端rdesktop。历经多个版本的开发，RDP最新版也支持了打印机重定向，音频重定向，剪贴板共享等功能。</li>
+<li>RemoteFX是RDP的增强版，提供了vGPU、视频支持、多点触摸、USB重定向等功能。</li>
+</ul>
+</li>
+</ul>
+<h6 id="HDP关键技术"><a href="#HDP关键技术" class="headerlink" title="HDP关键技术"></a>HDP关键技术</h6><ul>
+<li><p>２Ｄ图形显示技术</p>
+</li>
+<li><ul>
+<li>非自然图像无损压缩</li>
+<li>重复图像数据不传输</li>
+<li>支持多种图像压缩算法</li>
+</ul>
+</li>
+<li><p>语音技术</p>
+</li>
+<li><ul>
+<li>高保真Music压缩算法：自动识别声音场景，VOIP场景下采用针对人声优化的电信语音算法，音乐场景采用专业的高保真音乐编解码算法，极大提升音乐播放品质。</li>
+<li>自动降噪算法：VoIP启动自动降噪来压抑周边嘈杂音和背景声音，即使嘈杂环境也能通话自如。</li>
+<li>低延时：采用在TC端语音透传算法，降低语音在TC端由于缓冲带来的积累时延，保障语音实时性。</li>
+<li>高音质：采用更高的声音采样率（默认采用44.1K的采样率，友商一般16K），避免音质源头损失。</li>
+<li>立体混音：支持“立体混音”，即虚拟机所有输入声音和输出声音的混合。</li>
+</ul>
+</li>
+<li><p>视频显示技术</p>
+</li>
+<li><ul>
+<li>视频场景智能识别：在Display Server能够自动识别是视频数据还是普通的GDI数据，对于视频数据，采用高效的H.264或MPEG2进行编码，并充分利用TC端硬件能力进行解码。</li>
+<li>帧率动态调整：根据网络的质量动态调整视频播放的帧率，优先保证视频流畅度。</li>
+<li>视频数据自适应：根据显示器的分辨率和播放视频窗口的大小，自动调整视频数据流的大小，在播放器最小化时终止发数据，几乎没带宽，降低CPU消耗，提升用户体验。</li>
+<li>多媒体重定向：充分利用TC的硬件解码的能力，支持断线自动重线播放，流量动态调整，最大支持4K视频播放，流畅度优于ICA。</li>
+<li>强大的应用感知能力：对常用视频播放软件（Flash）和图像处理软件（如Photoshop）进行针对性优化，比ICA更流畅。</li>
+</ul>
+</li>
+<li><p>外设重定向</p>
+</li>
+<li><ul>
+<li>端口重定向：是指在远程桌面的操作系统中，针对端口底层协议进行重定向的技术；如USB端口重定向、串口重定向、并口重定向等。</li>
+<li>设备重定向：是指在远程桌面的操作系统中，针对设备应用协议进行重定向的技术；如摄像头重定向、TWAIN重定向等。</li>
+</ul>
+</li>
+<li><p>3D图形显示技术</p>
+</li>
+<li><ul>
+<li>GPU直通</li>
+<li>GPU硬件虚拟化</li>
+<li>图形工作站纳管</li>
+</ul>
+</li>
+</ul>
+<h4 id="华为桌面云部署方案"><a href="#华为桌面云部署方案" class="headerlink" title="华为桌面云部署方案"></a>华为桌面云部署方案</h4><h6 id="硬件部署方案"><a href="#硬件部署方案" class="headerlink" title="硬件部署方案"></a>硬件部署方案</h6><ul>
+<li><ul>
+<li><p>桌面云一体机</p>
+</li>
+<li><ul>
+<li>分布式存储</li>
+<li>系统预集成，一体化交付，统一监控告警</li>
+<li>最大规格：５０００桌面／套</li>
+</ul>
+</li>
+<li><p>标准桌面云</p>
+</li>
+<li><ul>
+<li>预验证，按需配置</li>
+<li>灵活异构，支持主流服务器和存储</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h6 id="软件部署方案"><a href="#软件部署方案" class="headerlink" title="软件部署方案"></a>软件部署方案</h6><img src="https://cdn.jsdelivr.net/gh/limuhuaxia/picgo/img/202203301643511.png" alt="image-20220330164352438" style="zoom:50%;" />
+
+ 
+
+<h6 id="终端接入层"><a href="#终端接入层" class="headerlink" title="终端接入层"></a>终端接入层</h6><ul>
+<li><ul>
+<li>安装一个软件CloudClient</li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>TC</th>
+<th>Thin Client</th>
+<th>瘦客户端</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>SC</td>
+<td>Soft Client</td>
+<td>软客户端</td>
+</tr>
+</tbody></table>
+<h6 id="接入和访问控制层"><a href="#接入和访问控制层" class="headerlink" title="接入和访问控制层"></a>接入和访问控制层</h6><table>
+<thead>
+<tr>
+<th>vLB</th>
+<th>Virtual Load Balance</th>
+<th>虚拟负载均衡</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>vAG</td>
+<td>Virtual Access Gateway</td>
+<td>虚拟接入网关</td>
+</tr>
+<tr>
+<td>SVN</td>
+<td>Security VPN</td>
+<td>华为安全网关与负载均衡产品</td>
+</tr>
+<tr>
+<td>WI</td>
+<td>Web Interface</td>
+<td>Web接口</td>
+</tr>
+<tr>
+<td>HDP Client</td>
+<td>HDP Client</td>
+<td>HDP客户端</td>
+</tr>
+</tbody></table>
+<h6 id="虚拟桌面管理层"><a href="#虚拟桌面管理层" class="headerlink" title="虚拟桌面管理层"></a>虚拟桌面管理层</h6><table>
+<thead>
+<tr>
+<th>HDC</th>
+<th>Huawei Desktop Controller</th>
+<th>华为桌面控制器</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>LIC</td>
+<td>License</td>
+<td>授权管理服务器</td>
+</tr>
+<tr>
+<td>ITA</td>
+<td>IT Adapter</td>
+<td>FA管理界面</td>
+</tr>
+<tr>
+<td>DB</td>
+<td>Data Base</td>
+<td>一种关系数据库</td>
+</tr>
+<tr>
+<td>AUS</td>
+<td>App Update Server</td>
+<td>应用升级服务器</td>
+</tr>
+<tr>
+<td>HDA</td>
+<td>HDP Agent</td>
+<td>HDP代理</td>
+</tr>
+<tr>
+<td>APS</td>
+<td>Application Server</td>
+<td>应用服务器</td>
+</tr>
+<tr>
+<td>TCM</td>
+<td>Thin Client Management</td>
+<td>瘦客户端管理</td>
+</tr>
+</tbody></table>
+<h6 id="额外组件"><a href="#额外组件" class="headerlink" title="额外组件"></a>额外组件</h6><table>
+<thead>
+<tr>
+<th>AD</th>
+<th>存储用户账号密码</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>DNS</td>
+<td>域名服务器</td>
+</tr>
+<tr>
+<td>DHCP</td>
+<td>分配IP地址</td>
+</tr>
+</tbody></table>
+<ul>
+<li><p>VM与APS</p>
+</li>
+<li><ul>
+<li>即虚拟机与应用</li>
+<li>可以选择分配桌面或者软件给用户使用</li>
+</ul>
+</li>
+<li><p>华为升级方案</p>
+</li>
+<li><ul>
+<li><p>AUS</p>
+</li>
+<li><ul>
+<li>HAD</li>
+</ul>
+</li>
+<li><p>UpdateTools</p>
+</li>
+<li><ul>
+<li>HDC</li>
+<li>License</li>
+<li>DB</li>
+<li>vLB</li>
+<li>vAG</li>
+<li>WI</li>
+</ul>
+</li>
+<li><p>WI</p>
+</li>
+<li><ul>
+<li>SC</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h6 id="时钟同步方案"><a href="#时钟同步方案" class="headerlink" title="时钟同步方案"></a>时钟同步方案</h6><ul>
+<li><ul>
+<li>时间不一样会导致很多功能无法使用</li>
+<li>当客户无提供外部时钟源，华为提供AD时，推荐采用AD通过管理平面从FusionCompute的主、备VRM所对应主机同步时间的方案。</li>
+<li>当由客户提供稳定的时钟源时，不管AD组件由客户提供还是华为提供，采用客户提供外部时钟源同步方案。</li>
+</ul>
+</li>
+</ul>
+<h6 id="网关与负载均衡器部署方案"><a href="#网关与负载均衡器部署方案" class="headerlink" title="网关与负载均衡器部署方案"></a>网关与负载均衡器部署方案</h6><ul>
+<li><ul>
+<li>负载均衡器可通过vLB实现该功能，用于将用户的HTTP(S)请求分配到不同的WI，能够自动对WI进行健康检查，确保所有的用户请求都能分配到可用的WI。</li>
+<li>网关可通过vAG实现该功能，用于业务接入（桌面协议HDP的接入）和自助维护接入，对客户端的接入进行加密保护，提高系统的安全性。</li>
+<li>部署，用户数小于５００，vAG/vLB只需要一套，主备部署各一套；</li>
+<li>用户数５００～１０００，vAG增加一个</li>
+<li>用户数１０００～２０００，一台服务器做网关集群（vAG随用户数增加）</li>
+<li>浮动IP在主备之间转换，所以不确定</li>
+</ul>
+</li>
+</ul>
+<p> 作业</p>
+<table>
+<thead>
+<tr>
+<th>产商</th>
+<th>产品</th>
+<th>架构</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>华三</td>
+<td>H3C Workspace</td>
+<td>VDI＋IDV</td>
+</tr>
+<tr>
+<td>深信服</td>
+<td>aDesk云终端/VDS桌面云一体机</td>
+<td>VDI</td>
+</tr>
+<tr>
+<td>思杰</td>
+<td>XenDesktop Essentials</td>
+<td>VDI</td>
+</tr>
+<tr>
+<td>Vmware</td>
+<td>VMware Horizon</td>
+<td>VDI</td>
+</tr>
+<tr>
+<td>锐捷</td>
+<td>锐捷三擎云桌面</td>
+<td>IDV+VDI</td>
+</tr>
+<tr>
+<td>华为</td>
+<td>Fusion Access</td>
+<td>VDI</td>
+</tr>
+</tbody></table>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">limu</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://limuhuaxia.github.io/2022/03/02/%E4%BA%91%E8%AE%A1%E7%AE%97/">https://limuhuaxia.github.io/2022/03/02/%E4%BA%91%E8%AE%A1%E7%AE%97/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://limuhuaxia.github.io" target="_blank">limuのArknights</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2022/05/12/HTML/"><img class="prev-cover" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">平平无奇的音乐网站</div></div></a></div><div class="next-post pull-right"><a href="/2022/02/24/%E7%B3%BB%E7%BB%9F%E5%8F%98%E9%87%8F%E4%B8%8D%E8%83%BD%E7%94%A8%E4%BA%86/"><img class="next-cover" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">系统变量灰色</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/head.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">limu</div><div class="author-info__description">欢迎来到木的方舟</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">6</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">8</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/limuhuaxia"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">今日事，今日毕</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BA%91%E8%AE%A1%E7%AE%97%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7"><span class="toc-number">1.</span> <span class="toc-text">云计算高级特性</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%85%BC%E5%AE%B9%E8%A1%8C%E4%B8%9A%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F"><span class="toc-number">1.1.</span> <span class="toc-text">兼容行业操作系统</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%81%B5%E6%B4%BB%E7%AE%A1%E7%90%86%E6%9E%B6%E6%9E%84"><span class="toc-number">1.2.</span> <span class="toc-text">灵活管理架构</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%9C%A8%E7%BA%BF%E8%B0%83%E6%95%B4CPU%E5%92%8C%E5%86%85%E5%AD%98"><span class="toc-number">1.3.</span> <span class="toc-text">在线调整CPU和内存</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%BB%E6%9C%BA%E5%86%85%E5%AD%98%E8%B6%85%E9%A2%9D%E5%88%86%E9%85%8D"><span class="toc-number">2.</span> <span class="toc-text">主机内存超额分配</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#NNMA%E4%BA%B2%E5%92%8C%E5%BA%A6"><span class="toc-number">2.1.</span> <span class="toc-text">NNMA亲和度</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%99%9A%E6%8B%9F%E6%9C%BAHA%EF%BC%88%E9%9B%86%E7%BE%A4%E7%9A%84%E9%AB%98%E5%8F%AF%E7%94%A8%E7%89%B9%E6%80%A7%EF%BC%89"><span class="toc-number">2.2.</span> <span class="toc-text">虚拟机HA（集群的高可用特性）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%9A%84%E7%83%AD%E8%BF%81%E7%A7%BB"><span class="toc-number">2.3.</span> <span class="toc-text">虚拟机的热迁移</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%A7%84%E5%88%99%E7%BB%84%E4%BC%98%E5%85%88%E7%BA%A7"><span class="toc-number">2.4.</span> <span class="toc-text">规则组优先级</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#DPM%E5%88%86%E5%B8%83%E5%BC%8F%E7%94%B5%E6%BA%90%E7%AE%A1%E7%90%86"><span class="toc-number">2.5.</span> <span class="toc-text">DPM分布式电源管理</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8A%A8%E6%80%81%E8%B5%84%E6%BA%90%E8%B0%83%E5%BA%A6%EF%BC%88DRS%EF%BC%89"><span class="toc-number">3.</span> <span class="toc-text">动态资源调度（DRS）</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#IMC%E9%9B%86%E7%BE%A4%E7%9A%84%E7%AD%96%E7%95%A5%EF%BC%88%E7%9B%AE%E5%89%8D%E6%94%AF%E6%8C%81Intel%EF%BC%89"><span class="toc-number">3.1.</span> <span class="toc-text">IMC集群的策略（目前支持Intel）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%A7%84%E5%88%99%E7%BB%84%EF%BC%88DRS%E8%A7%84%E5%88%99%E7%BB%84%EF%BC%89"><span class="toc-number">3.2.</span> <span class="toc-text">规则组（DRS规则组）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#CPU%E5%A4%8D%E7%94%A8"><span class="toc-number">3.3.</span> <span class="toc-text">CPU复用</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Fusion-Compute%E5%AD%98%E5%82%A8%E8%99%9A%E6%8B%9F%E5%8C%96%E6%9E%B6%E6%9E%84"><span class="toc-number">3.4.</span> <span class="toc-text">Fusion Compute存储虚拟化架构</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#VIMS%E8%99%9A%E6%8B%9F%E9%9B%86%E7%BE%A4%E5%AD%98%E5%82%A8%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F"><span class="toc-number">3.5.</span> <span class="toc-text">VIMS虚拟集群存储文件系统</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#VIMS%E5%88%86%E5%B8%83%E5%BC%8F%E9%94%81"><span class="toc-number">3.5.1.</span> <span class="toc-text">VIMS分布式锁</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#VIMS%E5%BF%83%E8%B7%B3"><span class="toc-number">3.5.2.</span> <span class="toc-text">VIMS心跳</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Fusion-Compute%E7%A3%81%E7%9B%98%E6%8A%80%E6%9C%AF"><span class="toc-number">3.6.</span> <span class="toc-text">Fusion Compute磁盘技术</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%AD%98%E5%82%A8%E8%99%9A%E6%8B%9F%E5%8C%96%E5%8A%9F%E8%83%BD%E5%8E%9F%E7%90%86"><span class="toc-number">3.7.</span> <span class="toc-text">存储虚拟化功能原理</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%BF%AB%E7%85%A7"><span class="toc-number">3.8.</span> <span class="toc-text">快照</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E5%BF%AB%E7%85%A7%E5%88%86%E7%B1%BB"><span class="toc-number">3.8.1.</span> <span class="toc-text">快照分类</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E5%BF%AB%E7%85%A7%E5%8E%9F%E7%90%86"><span class="toc-number">3.8.2.</span> <span class="toc-text">快照原理</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E9%93%BE%E6%8E%A5%E5%85%8B%E9%9A%86"><span class="toc-number">3.8.3.</span> <span class="toc-text">链接克隆</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E5%AD%98%E5%82%A8%E7%83%AD%E8%BF%81%E7%A7%BB"><span class="toc-number">3.8.4.</span> <span class="toc-text">存储热迁移</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E5%AD%98%E5%82%A8%E8%B5%84%E6%BA%90%E8%A3%B8%E8%AE%BE%E5%A4%87%E6%98%A0%E5%B0%84"><span class="toc-number">3.8.5.</span> <span class="toc-text">存储资源裸设备映射</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E5%AD%98%E5%82%A8%E6%89%A9%E5%AE%B9"><span class="toc-number">3.8.6.</span> <span class="toc-text">存储扩容</span></a></li></ol></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Fusion-Compute%E7%BD%91%E7%BB%9C%E8%99%9A%E6%8B%9F%E5%8C%96"><span class="toc-number">4.</span> <span class="toc-text">Fusion Compute网络虚拟化</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E8%99%9A%E6%8B%9F%E5%8C%96%E7%9B%B8%E5%85%B3%E6%A6%82%E5%BF%B5%E5%8F%8A%E6%8A%80%E6%9C%AF"><span class="toc-number">4.0.1.</span> <span class="toc-text">网络虚拟化相关概念及技术</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E8%99%9A%E6%8B%9F%E5%8C%96%E5%8A%9F%E8%83%BD%E7%89%B9%E6%80%A7"><span class="toc-number">4.0.2.</span> <span class="toc-text">网络虚拟化功能特性</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E4%BA%8C%E5%B1%82%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E7%AD%96%E7%95%A5"><span class="toc-number">4.0.3.</span> <span class="toc-text">二层网络安全策略</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Fusion-Compute%E6%97%A5%E5%B8%B8%E7%BB%B4%E6%8A%A4%E5%92%8C%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86"><span class="toc-number"></span> <span class="toc-text">Fusion Compute日常维护和故障处理</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BB%B4%E6%8A%A4%E7%AE%A1%E7%90%86"><span class="toc-number">1.</span> <span class="toc-text">维护管理</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%97%A5%E5%B8%B8%E7%9B%91%E6%8E%A7"><span class="toc-number">1.1.</span> <span class="toc-text">日常监控</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E6%97%A5%E5%B8%B8%E7%BB%B4%E6%8A%A4%E6%93%8D%E4%BD%9C%EF%BC%88%E8%BF%90%E7%BB%B4%EF%BC%89"><span class="toc-number">1.1.1.</span> <span class="toc-text">日常维护操作（运维）</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E5%91%8A%E8%AD%A6"><span class="toc-number">1.1.2.</span> <span class="toc-text">查看告警</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E5%AE%9E%E6%97%B6%E7%9B%91%E6%8E%A7"><span class="toc-number">1.1.3.</span> <span class="toc-text">实时监控</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E7%AE%A1%E7%90%86"><span class="toc-number">1.1.4.</span> <span class="toc-text">配置管理</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86"><span class="toc-number">1.1.5.</span> <span class="toc-text">用户管理</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E4%B8%89%E5%91%98%E5%88%86%E7%AB%8B"><span class="toc-number">1.1.6.</span> <span class="toc-text">三员分立</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Fusion-Access%E6%A1%8C%E9%9D%A2%E4%BA%91%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88"><span class="toc-number"></span> <span class="toc-text">Fusion Access桌面云解决方案</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%A1%8C%E9%9D%A2%E4%BA%91%E6%A6%82%E8%BF%B0"><span class="toc-number">1.</span> <span class="toc-text">桌面云概述</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E4%BC%A0%E7%BB%9F%E5%8A%9E%E5%85%AC%E7%BC%BA%E9%99%B7"><span class="toc-number">1.0.1.</span> <span class="toc-text">传统办公缺陷</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E6%A1%8C%E9%9D%A2%E4%BA%91%E4%BC%98%E5%8A%BF"><span class="toc-number">1.0.2.</span> <span class="toc-text">桌面云优势</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E4%BB%B7%E5%80%BC%E4%BC%98%E5%8A%BF"><span class="toc-number">1.0.3.</span> <span class="toc-text">价值优势</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF"><span class="toc-number">1.0.4.</span> <span class="toc-text">应用场景</span></a></li></ol></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%A1%8C%E9%9D%A2%E4%BA%91%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88"><span class="toc-number">2.</span> <span class="toc-text">桌面云解决方案</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E6%A1%8C%E9%9D%A2%E4%BA%91%E6%9E%B6%E6%9E%84"><span class="toc-number">2.0.1.</span> <span class="toc-text">桌面云架构</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#VDI%E4%B8%8EIDV"><span class="toc-number">2.0.2.</span> <span class="toc-text">VDI与IDV</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#Fusion-Access%E9%80%BB%E8%BE%91%E6%9E%B6%E6%9E%84"><span class="toc-number">2.0.3.</span> <span class="toc-text">Fusion Access逻辑架构</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#HDP%E6%A1%8C%E9%9D%A2%E5%8D%8F%E8%AE%AE%E4%BB%8B%E7%BB%8D"><span class="toc-number">2.0.4.</span> <span class="toc-text">HDP桌面协议介绍</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#HDP%E5%85%B3%E9%94%AE%E6%8A%80%E6%9C%AF"><span class="toc-number">2.0.5.</span> <span class="toc-text">HDP关键技术</span></a></li></ol></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8D%8E%E4%B8%BA%E6%A1%8C%E9%9D%A2%E4%BA%91%E9%83%A8%E7%BD%B2%E6%96%B9%E6%A1%88"><span class="toc-number">3.</span> <span class="toc-text">华为桌面云部署方案</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E7%A1%AC%E4%BB%B6%E9%83%A8%E7%BD%B2%E6%96%B9%E6%A1%88"><span class="toc-number">3.0.1.</span> <span class="toc-text">硬件部署方案</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E8%BD%AF%E4%BB%B6%E9%83%A8%E7%BD%B2%E6%96%B9%E6%A1%88"><span class="toc-number">3.0.2.</span> <span class="toc-text">软件部署方案</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E7%BB%88%E7%AB%AF%E6%8E%A5%E5%85%A5%E5%B1%82"><span class="toc-number">3.0.3.</span> <span class="toc-text">终端接入层</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E6%8E%A5%E5%85%A5%E5%92%8C%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6%E5%B1%82"><span class="toc-number">3.0.4.</span> <span class="toc-text">接入和访问控制层</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E8%99%9A%E6%8B%9F%E6%A1%8C%E9%9D%A2%E7%AE%A1%E7%90%86%E5%B1%82"><span class="toc-number">3.0.5.</span> <span class="toc-text">虚拟桌面管理层</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E9%A2%9D%E5%A4%96%E7%BB%84%E4%BB%B6"><span class="toc-number">3.0.6.</span> <span class="toc-text">额外组件</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E6%97%B6%E9%92%9F%E5%90%8C%E6%AD%A5%E6%96%B9%E6%A1%88"><span class="toc-number">3.0.7.</span> <span class="toc-text">时钟同步方案</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E7%BD%91%E5%85%B3%E4%B8%8E%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1%E5%99%A8%E9%83%A8%E7%BD%B2%E6%96%B9%E6%A1%88"><span class="toc-number">3.0.8.</span> <span class="toc-text">网关与负载均衡器部署方案</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/05/12/HTML/" title="平平无奇的音乐网站"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="平平无奇的音乐网站"/></a><div class="content"><a class="title" href="/2022/05/12/HTML/" title="平平无奇的音乐网站">平平无奇的音乐网站</a><time datetime="2022-05-12T06:37:00.000Z" title="发表于 2022-05-12 14:37:00">2022-05-12</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/03/02/%E4%BA%91%E8%AE%A1%E7%AE%97/" title="云计算"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="云计算"/></a><div class="content"><a class="title" href="/2022/03/02/%E4%BA%91%E8%AE%A1%E7%AE%97/" title="云计算">云计算</a><time datetime="2022-03-02T03:18:29.799Z" title="发表于 2022-03-02 11:18:29">2022-03-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/02/24/%E7%B3%BB%E7%BB%9F%E5%8F%98%E9%87%8F%E4%B8%8D%E8%83%BD%E7%94%A8%E4%BA%86/" title="系统变量灰色"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="系统变量灰色"/></a><div class="content"><a class="title" href="/2022/02/24/%E7%B3%BB%E7%BB%9F%E5%8F%98%E9%87%8F%E4%B8%8D%E8%83%BD%E7%94%A8%E4%BA%86/" title="系统变量灰色">系统变量灰色</a><time datetime="2022-02-24T06:33:00.000Z" title="发表于 2022-02-24 14:33:00">2022-02-24</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/02/09/Python/" title="Python基础"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Python基础"/></a><div class="content"><a class="title" href="/2022/02/09/Python/" title="Python基础">Python基础</a><time datetime="2022-02-09T12:00:00.000Z" title="发表于 2022-02-09 20:00:00">2022-02-09</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/12/09/HCIA%E5%AE%89%E5%85%A8%E5%AE%9E%E9%AA%8C/" title="HCIA安全实验"><img src="https://limuhuaxia.github.io//img/wen1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="HCIA安全实验"/></a><div class="content"><a class="title" href="/2021/12/09/HCIA%E5%AE%89%E5%85%A8%E5%AE%9E%E9%AA%8C/" title="HCIA安全实验">HCIA安全实验</a><time datetime="2021-12-09T06:15:55.000Z" title="发表于 2021-12-09 14:15:55">2021-12-09</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By limu</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
