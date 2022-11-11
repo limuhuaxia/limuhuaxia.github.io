@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://limuhuaxia.github.io/Games/index.html</loc>
+    
+    <lastmod>2022-11-11</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://limuhuaxia.github.io/2022/11/09/%E8%AE%B0%E4%B8%80%E6%AC%A1%E8%B0%83%E8%AF%95AP/</loc>
     
     <lastmod>2022-11-10</lastmod>
@@ -301,7 +310,7 @@
 
   <url>
     <loc>https://limuhuaxia.github.io/</loc>
-    <lastmod>2022-11-10</lastmod>
+    <lastmod>2022-11-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -309,105 +318,105 @@
   
   <url>
     <loc>https://limuhuaxia.github.io/tags/%E5%AE%89%E5%85%A8/</loc>
-    <lastmod>2022-11-10</lastmod>
+    <lastmod>2022-11-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://limuhuaxia.github.io/tags/%E5%AE%9E%E9%AA%8C/</loc>
-    <lastmod>2022-11-10</lastmod>
+    <lastmod>2022-11-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://limuhuaxia.github.io/tags/%E7%BC%96%E7%A8%8B/</loc>
-    <lastmod>2022-11-10</lastmod>
+    <lastmod>2022-11-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://limuhuaxia.github.io/tags/HTML/</loc>
-    <lastmod>2022-11-10</lastmod>
+    <lastmod>2022-11-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://limuhuaxia.github.io/tags/%E4%BA%91%E8%AE%A1%E7%AE%97-open-stack/</loc>
-    <lastmod>2022-11-10</lastmod>
+    <lastmod>2022-11-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://limuhuaxia.github.io/tags/makedown/</loc>
-    <lastmod>2022-11-10</lastmod>
+    <lastmod>2022-11-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://limuhuaxia.github.io/tags/%E5%AD%A6%E4%B9%A0/</loc>
-    <lastmod>2022-11-10</lastmod>
+    <lastmod>2022-11-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://limuhuaxia.github.io/tags/open-stack-%E4%BA%91%E8%AE%A1%E7%AE%97/</loc>
-    <lastmod>2022-11-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://limuhuaxia.github.io/tags/python/</loc>
-    <lastmod>2022-11-10</lastmod>
+    <lastmod>2022-11-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://limuhuaxia.github.io/tags/typora/</loc>
-    <lastmod>2022-11-10</lastmod>
+    <lastmod>2022-11-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://limuhuaxia.github.io/tags/picgo/</loc>
-    <lastmod>2022-11-10</lastmod>
+    <lastmod>2022-11-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://limuhuaxia.github.io/tags/python/</loc>
+    <lastmod>2022-11-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://limuhuaxia.github.io/tags/%E5%AE%9E%E4%B9%A0/</loc>
-    <lastmod>2022-11-10</lastmod>
+    <lastmod>2022-11-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://limuhuaxia.github.io/tags/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B%E5%B8%88/</loc>
-    <lastmod>2022-11-10</lastmod>
+    <lastmod>2022-11-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://limuhuaxia.github.io/tags/%E4%BA%91%E8%AE%A1%E7%AE%97/</loc>
-    <lastmod>2022-11-10</lastmod>
+    <lastmod>2022-11-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://limuhuaxia.github.io/tags/%E6%97%A5%E5%B8%B8%E9%97%AE%E9%A2%98/</loc>
-    <lastmod>2022-11-10</lastmod>
+    <lastmod>2022-11-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -416,49 +425,49 @@
   
   <url>
     <loc>https://limuhuaxia.github.io/categories/%E5%AE%89%E5%85%A8/</loc>
-    <lastmod>2022-11-10</lastmod>
+    <lastmod>2022-11-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://limuhuaxia.github.io/categories/%E7%BC%96%E7%A8%8B/</loc>
-    <lastmod>2022-11-10</lastmod>
+    <lastmod>2022-11-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://limuhuaxia.github.io/categories/Makedown/</loc>
-    <lastmod>2022-11-10</lastmod>
+    <lastmod>2022-11-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://limuhuaxia.github.io/categories/typora/</loc>
-    <lastmod>2022-11-10</lastmod>
+    <lastmod>2022-11-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://limuhuaxia.github.io/categories/typora/picgo/</loc>
-    <lastmod>2022-11-10</lastmod>
+    <lastmod>2022-11-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://limuhuaxia.github.io/categories/%E4%BA%91%E8%AE%A1%E7%AE%97/</loc>
-    <lastmod>2022-11-10</lastmod>
+    <lastmod>2022-11-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://limuhuaxia.github.io/categories/%E7%BD%91%E7%BB%9C/</loc>
-    <lastmod>2022-11-10</lastmod>
+    <lastmod>2022-11-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
