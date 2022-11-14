@@ -6,7 +6,7 @@
   <link href="https://limuhuaxia.github.io/atom.xml" rel="self"/>
   
   <link href="https://limuhuaxia.github.io/"/>
-  <updated>2022-11-10T08:35:12.584Z</updated>
+  <updated>2022-11-14T03:09:09.701Z</updated>
   <id>https://limuhuaxia.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>浪潮服务器NF5270M4</title>
+    <link href="https://limuhuaxia.github.io/2022/11/14/%E6%B5%AA%E6%BD%AE%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    <id>https://limuhuaxia.github.io/2022/11/14/%E6%B5%AA%E6%BD%AE%E6%9C%8D%E5%8A%A1%E5%99%A8/</id>
+    <published>2022-11-14T02:29:34.000Z</published>
+    <updated>2022-11-14T03:09:09.701Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="一、产品规格介绍"><a href="#一、产品规格介绍" class="headerlink" title="一、产品规格介绍"></a>一、产品规格介绍</h2><h3 id="1-1-简介"><a href="#1-1-简介" class="headerlink" title="1.1 简介"></a>1.1 简介</h3><h3 id="1-2-特性和规格"><a href="#1-2-特性和规格" class="headerlink" title="1.2 特性和规格"></a>1.2 特性和规格</h3><h3 id="1-3-前面板"><a href="#1-3-前面板" class="headerlink" title="1.3 前面板"></a>1.3 前面板</h3><h3 id="1-4-后面板"><a href="#1-4-后面板" class="headerlink" title="1.4 后面板"></a>1.4 后面板</h3><h3 id="1-5-主板布局"><a href="#1-5-主板布局" class="headerlink" title="1.5 主板布局"></a>1.5 主板布局</h3><h3 id="1-6-主板跳线介绍"><a href="#1-6-主板跳线介绍" class="headerlink" title="1.6 主板跳线介绍"></a>1.6 主板跳线介绍</h3><h2 id="二、BIOS设置"><a href="#二、BIOS设置" class="headerlink" title="二、BIOS设置"></a>二、BIOS设置</h2><h2 id="三、BMC设置"><a href="#三、BMC设置" class="headerlink" title="三、BMC设置"></a>三、BMC设置</h2><h2 id="四、硬件维护"><a href="#四、硬件维护" class="headerlink" title="四、硬件维护"></a>四、硬件维护</h2><h2 id="五、常见故障及诊断排除"><a href="#五、常见故障及诊断排除" class="headerlink" title="五、常见故障及诊断排除"></a>五、常见故障及诊断排除</h2>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;一、产品规格介绍&quot;&gt;&lt;a href=&quot;#一、产品规格介绍&quot; class=&quot;headerlink&quot; title=&quot;一、产品规格介绍&quot;&gt;&lt;/a&gt;一、产品规格介绍&lt;/h2&gt;&lt;h3 id=&quot;1-1-简介&quot;&gt;&lt;a href=&quot;#1-1-简介&quot; class=&quot;headerli</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>华为云桌面运维</title>
@@ -407,26 +427,6 @@
       
     <summary type="html">&lt;hr&gt;
 &lt;h2 id=&quot;拓扑&quot;&gt;&lt;a href=&quot;#拓扑&quot; class=&quot;headerlink&quot; title=&quot;拓扑&quot;&gt;&lt;/a&gt;拓扑&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/limuhuaxia/picgo/img/202207</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>思科防火墙</title>
-    <link href="https://limuhuaxia.github.io/2022/05/20/%E6%80%9D%E7%A7%91%E9%98%B2%E7%81%AB%E5%A2%99%E5%AE%9E%E9%AA%8C/"/>
-    <id>https://limuhuaxia.github.io/2022/05/20/%E6%80%9D%E7%A7%91%E9%98%B2%E7%81%AB%E5%A2%99%E5%AE%9E%E9%AA%8C/</id>
-    <published>2022-05-19T16:00:00.000Z</published>
-    <updated>2022-11-10T08:39:23.502Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="FW"><a href="#FW" class="headerlink" title="FW"></a>FW</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line">FW(config)# hostname FW</span><br><span class="line"></span><br><span class="line">FW(config)# interface GigabitEthernet0/0</span><br><span class="line">FW(config-if)# nameif inside</span><br><span class="line">FW(config-if)# security-level 100</span><br><span class="line">FW(config-if)# ip address 172.16.10.254 255.255.255.0</span><br><span class="line">FW(config-if)# no shutdown</span><br><span class="line"></span><br><span class="line">FW(config)# interface GigabitEthernet0/1</span><br><span class="line">FW(config-if)# nameif dmz</span><br><span class="line">FW(config-if)# security-level 50</span><br><span class="line">FW(config-if)# ip address 172.16.20.254 255.255.255.0</span><br><span class="line">FW(config-if)# no shutdown</span><br><span class="line"></span><br><span class="line">FW(config)# interface GigabitEthernet0/2</span><br><span class="line">FW(config-if)# nameif office</span><br><span class="line">FW(config-if)# security-level 70</span><br><span class="line">FW(config-if)# ip address 172.16.30.254 255.255.255.0</span><br><span class="line">FW(config-if)# no shutdown</span><br><span class="line"></span><br><span class="line">FW(config)# interface GigabitEthernet0/3</span><br><span class="line">FW(config-if)# nameif outside</span><br><span class="line">FW(config-if)# security-level 0</span><br><span class="line">FW(config-if)# ip address 2.61.243.1 255.255.255.0</span><br><span class="line">FW(config-if)# no shutdown</span><br><span class="line"></span><br><span class="line">FW(config-if)# router eigrp 100</span><br><span class="line">FW(config-router)# network 172.16.10.0 255.255.255.0</span><br><span class="line">FW(config-router)# network 172.16.20.0 255.255.255.0</span><br><span class="line">FW(config-router)# network 172.16.30.0 255.255.255.0</span><br><span class="line">FW(config-router)# network 2.61.243.0 255.255.255.0</span><br><span class="line"></span><br><span class="line">FW(config)# object network out</span><br><span class="line">FW(config-network-object)# host 172.16.30.2</span><br><span class="line">FW(config-network-object)# nat (office,outside) static 2.61.243.3</span><br><span class="line"></span><br><span class="line">FW(config)# access-list outside extended permit host 185.6.12.1 172.16.20.0 255.255.255.0</span><br><span class="line">FW(config)# access-list outside extended permit ip any host 172.16.30.2</span><br><span class="line">FW(config)# access-list dmz extended permit icmp any any</span><br><span class="line">FW(config)# access-list office extended permit icmp any any</span><br><span class="line">FW(config)# access-list inside extended permit icmp any any</span><br><span class="line"></span><br><span class="line">FW(config)# access-group inside in interface inside </span><br><span class="line">FW(config)# access-group dmz in interface dmz</span><br><span class="line">FW(config)# access-group office in interface office</span><br><span class="line">FW(config)# access-group outside in interface outside</span><br></pre></td></tr></table></figure><h3 id="ISP"><a href="#ISP" class="headerlink" title="ISP"></a>ISP</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">router&gt;en</span><br><span class="line">router&gt;conf t</span><br><span class="line">router(config)# hostname ISP</span><br><span class="line"></span><br><span class="line">ISP(config)# interface GigabitEthernet0/0</span><br><span class="line">ISP(config-if)# ip address 2.61.243.2 255.255.255.0</span><br><span class="line">ISP(config-if)# no shutdown</span><br><span class="line"></span><br><span class="line">ISp(config)# interface GigabitEthernet0/1</span><br><span class="line">ISp(config-if)# ip address 185.6.12.254 255.255.255.0</span><br><span class="line">ISP(config-if)# no shutdown</span><br><span class="line"></span><br><span class="line">ISp(config)# interface loopback 0</span><br><span class="line">ISp(config-if)# ip address 8.8.8.8 255.255.255.255</span><br><span class="line">ISP(config-if)# no shutdown</span><br><span class="line"></span><br><span class="line">ISP(config-if)# router eigrp 100</span><br><span class="line">ISP(config-router)# network 185.6.12.0 255.255.255.0</span><br><span class="line">ISP(config-router)# network 2.61.243.0 255.255.255.0</span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h3 id=&quot;FW&quot;&gt;&lt;a href=&quot;#FW&quot; class=&quot;headerlink&quot; title=&quot;FW&quot;&gt;&lt;/a&gt;FW&lt;/h3&gt;&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;s</summary>
       
     
     
