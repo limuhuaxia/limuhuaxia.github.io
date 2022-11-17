@@ -1,0 +1,344 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>使用IRXON BT578连接华三交换机 | limuのArknights</title><meta name="author" content="limu"><meta name="copyright" content="limu"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="一、工具介绍123品牌：IRXON（水木行）类型：BT578简介：蓝牙console线  二、使用介绍 1.在IRXON BT578(水木行：150)上开启蓝牙（正常情况闪烁蓝光）     2.打开笔记本电脑检索附近蓝牙,大概就像这样，要输PIN的话水木行默认的是“1234”     3.在计算机管理里查看是否出现了蓝牙COM口      4.打开SecureCRT，没有则去官网下载（下载Secu">
+<meta property="og:type" content="article">
+<meta property="og:title" content="使用IRXON BT578连接华三交换机">
+<meta property="og:url" content="https://limuhuaxia.github.io/2022/11/15/%E4%BD%BF%E7%94%A8IRXON-BT578%E8%BF%9E%E6%8E%A5%E5%8D%8E%E4%B8%89%E4%BA%A4%E6%8D%A2%E6%9C%BA/index.html">
+<meta property="og:site_name" content="limuのArknights">
+<meta property="og:description" content="一、工具介绍123品牌：IRXON（水木行）类型：BT578简介：蓝牙console线  二、使用介绍 1.在IRXON BT578(水木行：150)上开启蓝牙（正常情况闪烁蓝光）     2.打开笔记本电脑检索附近蓝牙,大概就像这样，要输PIN的话水木行默认的是“1234”     3.在计算机管理里查看是否出现了蓝牙COM口      4.打开SecureCRT，没有则去官网下载（下载Secu">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg">
+<meta property="article:published_time" content="2022-11-15T03:10:20.000Z">
+<meta property="article:modified_time" content="2022-11-17T02:54:46.980Z">
+<meta property="article:author" content="limu">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg"><link rel="shortcut icon" href="/img/logo.png"><link rel="canonical" href="https://limuhuaxia.github.io/2022/11/15/%E4%BD%BF%E7%94%A8IRXON-BT578%E8%BF%9E%E6%8E%A5%E5%8D%8E%E4%B8%89%E4%BA%A4%E6%8D%A2%E6%9C%BA/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":200},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '使用IRXON BT578连接华三交换机',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: true,
+  isToc: true,
+  postUpdate: '2022-11-17 10:54:46'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    document.addEventListener('pjax:complete', detectApple)})(window)</script><link rel="stylesheet" href="/css/custom.css"><link rel="stylesheet" href="APlayer.min.css"><div id="aplayer"></div><script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js" async></script><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="limuのArknights" type="application/atom+xml">
+</head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/head.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">29</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">15</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">7</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-book"></i><span> 文章</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 方舟</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-plane"></i><span> 番剧</span></a></li><li><a class="site-page child" href="/Games/"><i class="fa-fw fas fa-gamepad"></i><span> 游戏</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/message"><i class="fa-fw fas fa-comment-dots"></i><span> 留言</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 我</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">limuのArknights</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-book"></i><span> 文章</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 方舟</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-plane"></i><span> 番剧</span></a></li><li><a class="site-page child" href="/Games/"><i class="fa-fw fas fa-gamepad"></i><span> 游戏</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/message"><i class="fa-fw fas fa-comment-dots"></i><span> 留言</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 我</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">使用IRXON BT578连接华三交换机</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-11-15T03:10:20.000Z" title="发表于 2022-11-15 11:10:20">2022-11-15</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-11-17T02:54:46.980Z" title="更新于 2022-11-17 10:54:46">2022-11-17</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="使用IRXON BT578连接华三交换机"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="一、工具介绍"><a href="#一、工具介绍" class="headerlink" title="一、工具介绍"></a>一、工具介绍</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">品牌：IRXON（水木行）</span><br><span class="line">类型：BT578</span><br><span class="line">简介：蓝牙console线</span><br></pre></td></tr></table></figure>
+
+<h2 id="二、使用介绍"><a href="#二、使用介绍" class="headerlink" title="二、使用介绍"></a>二、使用介绍</h2><blockquote>
+<p>1.在IRXON BT578(水木行：150)上开启蓝牙（正常情况闪烁蓝光）</p>
+</blockquote>
+<img src="../../themes/Butterfly/image/image-20221115145132802.png" alt="image-20221115145132802" style="zoom:50%;" />
+
+<blockquote>
+<p>2.打开笔记本电脑检索附近蓝牙,大概就像这样，要输PIN的话水木行默认的是“1234”</p>
+</blockquote>
+<img src="../../themes/Butterfly/image/image-20221115145235176.png" alt="image-20221115145235176" style="zoom:50%;" />
+
+<blockquote>
+<p>3.在计算机管理里查看是否出现了蓝牙COM口 </p>
+</blockquote>
+<img src="../../themes/Butterfly/image/image-20221116141718668.png" alt="image-20221116141718668" style="zoom:50%;" />
+
+<blockquote>
+<p>4.打开SecureCRT，没有则去官网下载（<a target="_blank" rel="noopener" href="https://www.securecrt.net.cn/download.html">下载Securecrt</a>），新增会话Serial，点击下一步，端口选择COM4，波特率根据实际来操作，一般华三交换机波特率为9600，再点击下一步完成即可。</p>
+</blockquote>
+<img src="../../themes/Butterfly/image/image-20221116142952097.png" alt="image-20221116142952097" style="zoom: 25%;" />
+
+<img src="../../themes/Butterfly/image/image-20221116143106971.png" alt="image-20221116143106971" style="zoom:50%;" />
+
+<blockquote>
+<p>5.将蓝牙COM线的网口插入要配置的华三交换机，双击刚才新建的会话即可对华三交换机进行配置</p>
+</blockquote>
+<h2 id="三、交换机配置"><a href="#三、交换机配置" class="headerlink" title="三、交换机配置"></a>三、交换机配置</h2><blockquote>
+<p>H3C01配置</p>
+</blockquote>
+<h5 id="1-重命名和开启远程登录功能"><a href="#1-重命名和开启远程登录功能" class="headerlink" title="1.重命名和开启远程登录功能"></a>1.重命名和开启远程登录功能</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;H3C&gt;system-view 	</span><br><span class="line">[H3C]sysname H3C01</span><br><span class="line">telnet server enable</span><br></pre></td></tr></table></figure>
+
+<h5 id="2-开启dot1x认证，允许未授权用户访问特定地址"><a href="#2-开启dot1x认证，允许未授权用户访问特定地址" class="headerlink" title="2.开启dot1x认证，允许未授权用户访问特定地址"></a>2.开启dot1x认证，允许未授权用户访问特定地址</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"> dot1x enable	#开启dot1x认证</span><br><span class="line"> dot1x authentication-method eap	#认证方式为eap</span><br><span class="line"> dot1x ead-assistant enable	#开启EAD快速部署辅助功能</span><br><span class="line"> dot1x ead-assistant url https://127.0.0.1/index.html	</span><br><span class="line"> #	dot1x url命令用来配置用户HTTP访问的重定向URL，即用户在802.1X认证成功之前，如果使用浏览器访问非Free IP网段的其它网络，设备会将用户访问的URL重定向到已配置的HTTP访问的重定向地址</span><br><span class="line"> 需要注意的是：</span><br><span class="line">	·重定向的URL和Free IP必须在同一个网段内，否则无法访问指定的重定向URL；</span><br><span class="line">	·用户HTTP访问的重定向URL可多次配置，但仅最后配置的一条有效。</span><br><span class="line"> dot1x timer ead-timeout 100	#EAD规则的老化时间，取值范围为1～1440，单位为分钟，默认30。</span><br><span class="line"> dot1x ead-assistant free-ip 97.32.0.29 255.255.255.255	#即用户在802.1X认证成功之前可访问的免认证网段。undo dot1x free-ip命令用来删除配置的Free IP。</span><br><span class="line">需要注意的是：</span><br><span class="line">    ·Free IP功能与全局使能MAC认证、端口安全功能互斥；</span><br><span class="line">    ·Free IP功能只在端口接入控制的模式为auto的情况下生效；</span><br><span class="line">    ·Free IP可配置多条，但具体数目与产品型号有关，请以设备的实际情况为准。</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://zhiliao.h3c.com/uploads/q/20210818/16292566606544.png" alt="img"></p>
+<h5 id="3-创建VLAN并命名"><a href="#3-创建VLAN并命名" class="headerlink" title="3.创建VLAN并命名"></a>3.创建VLAN并命名</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">vlan 10</span><br><span class="line"> name YeWu</span><br><span class="line">vlan 20</span><br><span class="line"> name BanGong</span><br></pre></td></tr></table></figure>
+
+<h5 id="4-RIP路由配置"><a href="#4-RIP路由配置" class="headerlink" title="4.RIP路由配置"></a>4.RIP路由配置</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">rip 1	#路由进程</span><br><span class="line"> undo summary     #缺省情况下，RIP-2自动路由聚合功能处于使能状态，如果路由表里的路由子网不连续，则需要取消自动路由聚合功能，使得RIP-2能够向外发布子网路由和主机路由，此处取消自动聚合功能 </span><br><span class="line"> </span><br><span class="line"> version 2	#RIP2</span><br><span class="line"> network 192.168.11.0 0.0.0.255</span><br><span class="line"> network 192.168.12.0 0.0.0.255</span><br><span class="line"> network 192.168.20.44 0.0.0.3</span><br><span class="line"> bfd all-interfaces enable	#用来在运行当前RIP进程的所有接口上使能BFD功能</span><br><span class="line"> bfd echo-source-ip 123.123.123.123	#配置echo报文源IP地址，缺省情况下，未配置echo报文的源IPv4地址。</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h5 id="5-链路聚合和VLAN配置"><a href="#5-链路聚合和VLAN配置" class="headerlink" title="5.链路聚合和VLAN配置"></a>5.链路聚合和VLAN配置</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">interface Bridge-Aggregation1	#创建链路聚合端口 1</span><br><span class="line"> port link-type trunk	#端口类型为trunk</span><br><span class="line"> undo port trunk permit vlan 1	#禁止默认放行的vlan 1</span><br><span class="line"> port trunk permit vlan 10 20	#放行valn 10和20</span><br><span class="line">#</span><br><span class="line">interface GigabitEthernet0/49	#进入接口模式下</span><br><span class="line"> port link-mode bridge	#端口模式在二层的bridge模式，主要用于做二层的互联，VLAN划分或透传。</span><br><span class="line"> port link-type trunk	#如上</span><br><span class="line"> undo port trunk permit vlan 1	#如上</span><br><span class="line"> port trunk permit vlan 10 20	#如上</span><br><span class="line"> port link-aggregation group 1	#将此接口加入聚合端口 1</span><br><span class="line">#</span><br><span class="line">interface GigabitEthernet0/50	</span><br><span class="line"> port link-mode bridge</span><br><span class="line"> port link-type trunk</span><br><span class="line"> undo port trunk permit vlan 1</span><br><span class="line"> port trunk permit vlan 10 20</span><br><span class="line"> port link-aggregation group 1</span><br></pre></td></tr></table></figure>
+
+<h5 id="6、外网端口配置和时间同步"><a href="#6、外网端口配置和时间同步" class="headerlink" title="6、外网端口配置和时间同步"></a>6、外网端口配置和时间同步</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">interface GigabitEthernet0/0</span><br><span class="line"> port link-mode route	#说明端口模式在三层的路由模式，可以直接在端口配置IP地址。</span><br><span class="line"> description Connect-to-DianXin	#备注端口作用</span><br><span class="line"> ip address 120.240.40.46 255.255.255.252</span><br><span class="line"> rip bfd enable	#RIP bfd检测功能开启</span><br><span class="line"> dldp enable	#开启dldp功能，即设备链路检测协议，功能是检测链路连接是否正确、链路两端可否正常交互报文</span><br><span class="line">#</span><br><span class="line">ntp-service enable 	#开启网络时间协议</span><br><span class="line">ntp-service unicast-server 10.112.65.1 source Vlan-interface10	#配置VLAN 10接口的IP地址作为NTP报文的源IPv4地址</span><br></pre></td></tr></table></figure>
+
+<h5 id="7-ACL和VRRP"><a href="#7-ACL和VRRP" class="headerlink" title="7.ACL和VRRP"></a>7.ACL和VRRP</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">#</span><br><span class="line">acl advanced 3110	#创建一个高级ACL</span><br><span class="line"> rule 10 permit ip source 97.1.11.101 0 destination 9.140.47.0 0.0.0.255</span><br><span class="line"> rule 20 permit ip source 97.1.11.187 0 destination 9.140.47.0 0.0.0.255</span><br><span class="line"> rule 40 deny ip destination 9.140.47.0 0.0.0.255</span><br><span class="line"> rule 850 permit ip</span><br><span class="line"> </span><br><span class="line">#</span><br><span class="line">interface Vlan-interface10	#进入vlan接口视图下</span><br><span class="line"> description Connect-to-YeWu</span><br><span class="line"> ip address 192.168.11.253 255.255.255.0</span><br><span class="line"> vrrp vrid 10 virtual-ip 192.168.11.254	#网关</span><br><span class="line"> vrrp vrid 10 priority 150	#优先级，取值范围0～255，数值越大表明优先级越高</span><br><span class="line"> vrrp vrid 10 preempt-mode delay 5	#指定设备的抢占延迟时间，整数形式，取值范围是0～3600，单位是秒。缺省值为0秒。</span><br><span class="line"> packet-filter 3110 inbound	#在此接口下应用ACL</span><br><span class="line">#               </span><br><span class="line">interface Vlan-interface20</span><br><span class="line"> description Connect-BanGong</span><br><span class="line"> ip address 192.168.22.253 255.255.255.0</span><br><span class="line"> vrrp vrid 20 virtual-ip 192.168.22.254</span><br><span class="line"> vrrp vrid 20 priority 90</span><br><span class="line"> vrrp vrid 20 preempt-mode delay 5</span><br><span class="line"> packet-filter 3110 inbound</span><br></pre></td></tr></table></figure>
+
+<h5 id="8-radius认证"><a href="#8-radius认证" class="headerlink" title="8.radius认证"></a>8.radius认证</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line">#</span><br><span class="line">radius session-control enable</span><br><span class="line">#</span><br><span class="line">radius scheme imc</span><br><span class="line"> primary authentication 192.32.0.29</span><br><span class="line"> primary accounting 192.32.0.29</span><br><span class="line"> secondary authentication 192.32.0.30</span><br><span class="line"> secondary accounting 192.32.0.30</span><br><span class="line"> key authentication simple Huawei@123</span><br><span class="line"> key accounting simple Huawei@123</span><br><span class="line"> user-name-format without-domain</span><br><span class="line"> nas-ip 192.168.11.253</span><br><span class="line">#</span><br><span class="line">      </span><br><span class="line">domain imc</span><br><span class="line"> authentication lan-access radius-scheme imc none</span><br><span class="line"> authorization lan-access radius-scheme imc none</span><br><span class="line"> accounting lan-access radius-scheme imc none</span><br><span class="line">#</span><br><span class="line">domain system</span><br><span class="line">domain default enable imc</span><br><span class="line">#</span><br><span class="line">local-user cisco class manage</span><br><span class="line"> password simple Huawei@123</span><br><span class="line"> service-type ssh telnet terminal</span><br><span class="line"> authorization-attribute user-role network-admin</span><br><span class="line"> authorization-attribute user-role network-operator</span><br><span class="line">#</span><br><span class="line">line con 0</span><br><span class="line"> authentication-mode scheme</span><br><span class="line"> user-role network-admin</span><br><span class="line">#</span><br><span class="line">line vty 0 15</span><br><span class="line"> authentication-mode scheme</span><br><span class="line">#</span><br><span class="line">undo dhcp server ip-pool lan1</span><br><span class="line">#</span><br><span class="line">undo interface Vlan-interface1</span><br><span class="line">#</span><br><span class="line">interface range GigabitEthernet0/3 to GigabitEthernet0/48</span><br><span class="line"> port link-mode bridge       </span><br><span class="line"> description ShengChan</span><br><span class="line"> port access vlan 10</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="四、锐捷交换机"><a href="#四、锐捷交换机" class="headerlink" title="四、锐捷交换机"></a>四、锐捷交换机</h2><h4 id="配置步骤"><a href="#配置步骤" class="headerlink" title="配置步骤"></a>配置步骤</h4><p>先查看一下网关的原有配置（针对配置过的网关需要修改），使用超级终端连接使用“show run”命令查看当前配置，找到内网的管理地址，我这边的管理地址是192.168.1.1。</p>
+<p><strong>修改电脑IP 默认为192.168.1.123（修改的地址与管理地址在同一网段）；打开浏览器，在地址栏输入<a target="_blank" rel="noopener" href="http://192.168.1.1;登陆帐号和密码.默认的帐号和密码都为admin./">http://192.168.1.1；登陆帐号和密码。默认的帐号和密码都为admin。</a></strong></p>
+<p><img src="http://www.isolves.com/d/file/p/2020/04-29/8cd390853ef83f30ae50cc5404821eb8.jpg" alt="非常详细的锐捷网关路由配置教程，适合新手小白"></p>
+<h5 id="1、配置网络模式为网关模式"><a href="#1、配置网络模式为网关模式" class="headerlink" title="1、配置网络模式为网关模式"></a>1、配置网络模式为网关模式</h5><p><img src="http://www.isolves.com/d/file/p/2020/04-29/51e2e2b274282ad55b9c15cfe203d701.jpg" alt="非常详细的锐捷网关路由配置教程，适合新手小白"></p>
+<h5 id="2、内网口设置"><a href="#2、内网口设置" class="headerlink" title="2、内网口设置"></a>2、内网口设置</h5><p><img src="http://www.isolves.com/d/file/p/2020/04-29/5d83ae29128c351359b3a5228b930d51.jpg" alt="非常详细的锐捷网关路由配置教程，适合新手小白"></p>
+<h5 id="3、外网口设置"><a href="#3、外网口设置" class="headerlink" title="3、外网口设置"></a>3、外网口设置</h5><p><img src="http://www.isolves.com/d/file/p/2020/04-29/9361f1db1020182ba049f1097d9f0cbc.jpg" alt="非常详细的锐捷网关路由配置教程，适合新手小白"></p>
+<h5 id="4、静态路由设置"><a href="#4、静态路由设置" class="headerlink" title="4、静态路由设置"></a>4、静态路由设置</h5><p>在路由/负载中点击普通路由进行静态路由的添加。</p>
+<p><img src="http://www.isolves.com/d/file/p/2020/04-29/b9aa7aed027d8226d96206a4867372b2.jpg" alt="非常详细的锐捷网关路由配置教程，适合新手小白"></p>
+<h5 id="5、选择“普通路由”，然后新建静态路由"><a href="#5、选择“普通路由”，然后新建静态路由" class="headerlink" title="5、选择“普通路由”，然后新建静态路由"></a>5、选择“普通路由”，然后新建静态路由</h5><p><img src="http://www.isolves.com/d/file/p/2020/04-29/4a8004504e49bc8d46c5dd4f1cdf493d.jpg" alt="非常详细的锐捷网关路由配置教程，适合新手小白"></p>
+<h5 id="6、在新建静态路由页面，依次填写-目的网段、目的网段掩码、路由出接口、吓一跳地址、路由选路"><a href="#6、在新建静态路由页面，依次填写-目的网段、目的网段掩码、路由出接口、吓一跳地址、路由选路" class="headerlink" title="6、在新建静态路由页面，依次填写 目的网段、目的网段掩码、路由出接口、吓一跳地址、路由选路"></a>6、在新建静态路由页面，依次填写 目的网段、目的网段掩码、路由出接口、吓一跳地址、路由选路</h5><p><img src="http://www.isolves.com/d/file/p/2020/04-29/e1cc1314f8d9b7d2d74116ae32d13174.jpg" alt="非常详细的锐捷网关路由配置教程，适合新手小白"></p>
+<p>转载至：<a target="_blank" rel="noopener" href="https://www.isolves.com/it/wl/sz/2020-04-29/16720.html">https://www.isolves.com/it/wl/sz/2020-04-29/16720.html</a></p>
+<p>非常感谢！</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">limu</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://limuhuaxia.github.io/2022/11/15/%E4%BD%BF%E7%94%A8IRXON-BT578%E8%BF%9E%E6%8E%A5%E5%8D%8E%E4%B8%89%E4%BA%A4%E6%8D%A2%E6%9C%BA/">https://limuhuaxia.github.io/2022/11/15/%E4%BD%BF%E7%94%A8IRXON-BT578%E8%BF%9E%E6%8E%A5%E5%8D%8E%E4%B8%89%E4%BA%A4%E6%8D%A2%E6%9C%BA/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://limuhuaxia.github.io" target="_blank">limuのArknights</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2022/11/14/%E6%B5%AA%E6%BD%AE%E6%9C%8D%E5%8A%A1%E5%99%A8/"><img class="next-cover" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">浪潮服务器NF5270M4</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="gitalk-container"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/head.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">limu</div><div class="author-info__description">欢迎来到limu的方舟</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">29</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">15</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">7</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/limuhuaxia"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">今日事，今日毕</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E5%B7%A5%E5%85%B7%E4%BB%8B%E7%BB%8D"><span class="toc-number">1.</span> <span class="toc-text">一、工具介绍</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E4%BD%BF%E7%94%A8%E4%BB%8B%E7%BB%8D"><span class="toc-number">2.</span> <span class="toc-text">二、使用介绍</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E4%BA%A4%E6%8D%A2%E6%9C%BA%E9%85%8D%E7%BD%AE"><span class="toc-number">3.</span> <span class="toc-text">三、交换机配置</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-%E9%87%8D%E5%91%BD%E5%90%8D%E5%92%8C%E5%BC%80%E5%90%AF%E8%BF%9C%E7%A8%8B%E7%99%BB%E5%BD%95%E5%8A%9F%E8%83%BD"><span class="toc-number">3.0.0.1.</span> <span class="toc-text">1.重命名和开启远程登录功能</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-%E5%BC%80%E5%90%AFdot1x%E8%AE%A4%E8%AF%81%EF%BC%8C%E5%85%81%E8%AE%B8%E6%9C%AA%E6%8E%88%E6%9D%83%E7%94%A8%E6%88%B7%E8%AE%BF%E9%97%AE%E7%89%B9%E5%AE%9A%E5%9C%B0%E5%9D%80"><span class="toc-number">3.0.0.2.</span> <span class="toc-text">2.开启dot1x认证，允许未授权用户访问特定地址</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-%E5%88%9B%E5%BB%BAVLAN%E5%B9%B6%E5%91%BD%E5%90%8D"><span class="toc-number">3.0.0.3.</span> <span class="toc-text">3.创建VLAN并命名</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4-RIP%E8%B7%AF%E7%94%B1%E9%85%8D%E7%BD%AE"><span class="toc-number">3.0.0.4.</span> <span class="toc-text">4.RIP路由配置</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#5-%E9%93%BE%E8%B7%AF%E8%81%9A%E5%90%88%E5%92%8CVLAN%E9%85%8D%E7%BD%AE"><span class="toc-number">3.0.0.5.</span> <span class="toc-text">5.链路聚合和VLAN配置</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#6%E3%80%81%E5%A4%96%E7%BD%91%E7%AB%AF%E5%8F%A3%E9%85%8D%E7%BD%AE%E5%92%8C%E6%97%B6%E9%97%B4%E5%90%8C%E6%AD%A5"><span class="toc-number">3.0.0.6.</span> <span class="toc-text">6、外网端口配置和时间同步</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#7-ACL%E5%92%8CVRRP"><span class="toc-number">3.0.0.7.</span> <span class="toc-text">7.ACL和VRRP</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#8-radius%E8%AE%A4%E8%AF%81"><span class="toc-number">3.0.0.8.</span> <span class="toc-text">8.radius认证</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E9%94%90%E6%8D%B7%E4%BA%A4%E6%8D%A2%E6%9C%BA"><span class="toc-number">4.</span> <span class="toc-text">四、锐捷交换机</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E6%AD%A5%E9%AA%A4"><span class="toc-number">4.0.1.</span> <span class="toc-text">配置步骤</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1%E3%80%81%E9%85%8D%E7%BD%AE%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%BC%8F%E4%B8%BA%E7%BD%91%E5%85%B3%E6%A8%A1%E5%BC%8F"><span class="toc-number">4.0.1.1.</span> <span class="toc-text">1、配置网络模式为网关模式</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2%E3%80%81%E5%86%85%E7%BD%91%E5%8F%A3%E8%AE%BE%E7%BD%AE"><span class="toc-number">4.0.1.2.</span> <span class="toc-text">2、内网口设置</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3%E3%80%81%E5%A4%96%E7%BD%91%E5%8F%A3%E8%AE%BE%E7%BD%AE"><span class="toc-number">4.0.1.3.</span> <span class="toc-text">3、外网口设置</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4%E3%80%81%E9%9D%99%E6%80%81%E8%B7%AF%E7%94%B1%E8%AE%BE%E7%BD%AE"><span class="toc-number">4.0.1.4.</span> <span class="toc-text">4、静态路由设置</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#5%E3%80%81%E9%80%89%E6%8B%A9%E2%80%9C%E6%99%AE%E9%80%9A%E8%B7%AF%E7%94%B1%E2%80%9D%EF%BC%8C%E7%84%B6%E5%90%8E%E6%96%B0%E5%BB%BA%E9%9D%99%E6%80%81%E8%B7%AF%E7%94%B1"><span class="toc-number">4.0.1.5.</span> <span class="toc-text">5、选择“普通路由”，然后新建静态路由</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#6%E3%80%81%E5%9C%A8%E6%96%B0%E5%BB%BA%E9%9D%99%E6%80%81%E8%B7%AF%E7%94%B1%E9%A1%B5%E9%9D%A2%EF%BC%8C%E4%BE%9D%E6%AC%A1%E5%A1%AB%E5%86%99-%E7%9B%AE%E7%9A%84%E7%BD%91%E6%AE%B5%E3%80%81%E7%9B%AE%E7%9A%84%E7%BD%91%E6%AE%B5%E6%8E%A9%E7%A0%81%E3%80%81%E8%B7%AF%E7%94%B1%E5%87%BA%E6%8E%A5%E5%8F%A3%E3%80%81%E5%90%93%E4%B8%80%E8%B7%B3%E5%9C%B0%E5%9D%80%E3%80%81%E8%B7%AF%E7%94%B1%E9%80%89%E8%B7%AF"><span class="toc-number">4.0.1.6.</span> <span class="toc-text">6、在新建静态路由页面，依次填写 目的网段、目的网段掩码、路由出接口、吓一跳地址、路由选路</span></a></li></ol></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/11/15/%E4%BD%BF%E7%94%A8IRXON-BT578%E8%BF%9E%E6%8E%A5%E5%8D%8E%E4%B8%89%E4%BA%A4%E6%8D%A2%E6%9C%BA/" title="使用IRXON BT578连接华三交换机"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="使用IRXON BT578连接华三交换机"/></a><div class="content"><a class="title" href="/2022/11/15/%E4%BD%BF%E7%94%A8IRXON-BT578%E8%BF%9E%E6%8E%A5%E5%8D%8E%E4%B8%89%E4%BA%A4%E6%8D%A2%E6%9C%BA/" title="使用IRXON BT578连接华三交换机">使用IRXON BT578连接华三交换机</a><time datetime="2022-11-15T03:10:20.000Z" title="发表于 2022-11-15 11:10:20">2022-11-15</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/11/14/%E6%B5%AA%E6%BD%AE%E6%9C%8D%E5%8A%A1%E5%99%A8/" title="浪潮服务器NF5270M4"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="浪潮服务器NF5270M4"/></a><div class="content"><a class="title" href="/2022/11/14/%E6%B5%AA%E6%BD%AE%E6%9C%8D%E5%8A%A1%E5%99%A8/" title="浪潮服务器NF5270M4">浪潮服务器NF5270M4</a><time datetime="2022-11-14T02:29:34.000Z" title="发表于 2022-11-14 10:29:34">2022-11-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/11/09/%E5%8D%8E%E4%B8%BA%E4%BA%91%E6%A1%8C%E9%9D%A2%E8%BF%90%E7%BB%B4/" title="华为云桌面运维"><img src="https://limuhuaxia.github.io//img/2311.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="华为云桌面运维"/></a><div class="content"><a class="title" href="/2022/11/09/%E5%8D%8E%E4%B8%BA%E4%BA%91%E6%A1%8C%E9%9D%A2%E8%BF%90%E7%BB%B4/" title="华为云桌面运维">华为云桌面运维</a><time datetime="2022-11-08T16:00:00.000Z" title="发表于 2022-11-09 00:00:00">2022-11-09</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By limu</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>function addGitalkSource () {
+  const ele = document.createElement('link')
+  ele.rel = 'stylesheet'
+  ele.href= 'https://cdn.jsdelivr.net/npm//dist/.min.css'
+  document.getElementsByTagName('head')[0].appendChild(ele)
+}
+
+function loadGitalk () {
+  function initGitalk () {
+    var gitalk = new Gitalk(Object.assign({
+      clientID: 'e5a35f53d2f1ae9d0a6d',
+      clientSecret: '2dffbed8ff7654ff17b4d153875c2ab1e5534156',
+      repo: 'limuhuaxia.github.io',
+      owner: 'limuhuaxia',
+      admin: ['limuhuaxia'],
+      id: '46e1e66f40defc908224c971c158e3a9',
+      proxy: '{{ theme.gitalk.proxy }}',
+      language: 'zh-CN',
+      perPage: 5,
+      distractionFreeMode: true,
+      pagerDirection: 'last',
+      createIssueManually: false,
+      updateCountCallback: commentCount
+    },null))
+
+    gitalk.render('gitalk-container')
+  }
+
+  if (typeof Gitalk === 'function') initGitalk()
+  else {
+    addGitalkSource()
+    getScript('https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js').then(initGitalk)
+  }
+}
+
+function commentCount(n){
+  let isCommentCount = document.querySelector('#post-meta .gitalk-comment-count')
+  if (isCommentCount) {
+    isCommentCount.innerHTML= n
+  }
+}
+
+if ('Gitalk' === 'Gitalk' || !false) {
+  if (false) btf.loadComment(document.getElementById('gitalk-container'), loadGitalk)
+  else loadGitalk()
+} else {
+  function loadOtherComment () {
+    loadGitalk()
+  }
+}</script></div>null<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = [
+  'title',
+  '#config-diff',
+  '#body-wrap',
+  '#rightside-config-hide',
+  '#rightside-config-show',
+  '.js-pjax'
+]
+
+if (false) {
+  pjaxSelectors.unshift('meta[property="og:image"]', 'meta[property="og:title"]', 'meta[property="og:url"]')
+}
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.removeEventListener('scroll', window.tocScrollFn)
+  window.removeEventListener('scroll', scrollCollect)
+
+  typeof preloader === 'object' && preloader.initLoading()
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // Analytics
+  if (false) {
+    MtaH5.pgv()
+  }
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
