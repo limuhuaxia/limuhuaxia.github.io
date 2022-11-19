@@ -131,6 +131,26 @@
   </entry>
   
   <entry>
+    <title>服务器基础知识</title>
+    <link href="https://limuhuaxia.github.io/2022/10/12/20221012-%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    <id>https://limuhuaxia.github.io/2022/10/12/20221012-%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</id>
+    <published>2022-10-11T16:00:00.000Z</published>
+    <updated>2022-11-10T08:56:43.422Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="1-什么是服务器"><a href="#1-什么是服务器" class="headerlink" title="1.什么是服务器"></a>1.什么是服务器</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">服务器是计算机的一种，是网络中为客户端计算机提供各种服务的高性能的计算机</span><br></pre></td></tr></table></figure><h4 id="2-服务器按架构分类"><a href="#2-服务器按架构分类" class="headerlink" title="2.服务器按架构分类"></a>2.服务器按架构分类</h4><ul><li>X86架构</li><li>RISC架构服务器</li><li>EPIC架构服务器</li></ul><h4 id="3-服务器按功能应用分类"><a href="#3-服务器按功能应用分类" class="headerlink" title="3.服务器按功能应用分类"></a>3.服务器按功能应用分类</h4><ul><li><p>域控制服务器（Domain Server）</p></li><li><p>文件服务器（File Server）</p></li><li><p>打印服务器（Print Server）</p></li><li><p>数据库服务器（Database Server）</p></li><li><p>邮件服务器（E-mail Server）</p></li><li><p>Web服务器（Web Server）</p></li><li><p>多媒体服务器（Multimedia　Server）</p></li><li><p>通讯服务器（Communication Server）</p></li><li><p>终端服务器（Terminal Server）</p></li><li><p>基础架构服务器（Infrastructure Server）</p></li><li><p>虚拟化服务器（Virtualization Server）</p></li></ul><h4 id="4-服务器按外观分类"><a href="#4-服务器按外观分类" class="headerlink" title="4.服务器按外观分类"></a>4.服务器按外观分类</h4><ul><li><p>塔式（Tower）</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">立式放置的服务器机型；外形以及结构都跟立式PC差不多，但服务器机箱比PC机箱体积更大，Tower机型在外观尺寸上要求没有Rack严格，可预留更多扩展空间。</span><br></pre></td></tr></table></figure></li><li><p>机架式 （Rack）</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">外观尺寸及装配尺寸符合标准尺寸，可以放在标准高度的机架中。高度用“U”来计量， “U”为通用工业机架高度标准；1U＝1.75英寸=44.445mm</span><br></pre></td></tr></table></figure></li><li><p>刀片式服务器（Blade）</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">是一种高可用高密度的低成本服务器平台，是专门为特殊应用行业和高密度计算机环境设计的，其中每一块“刀片”实际上就是一块系统母板，类似于一个个独立的服务器。刀片式服务器目前最适合群集计算和提供互联网服务。</span><br></pre></td></tr></table></figure></li></ul><h4 id="5-服务器与PC机的区别"><a href="#5-服务器与PC机的区别" class="headerlink" title="5.服务器与PC机的区别"></a>5.服务器与PC机的区别</h4><ul><li>处理能力强——CPU的区别</li><li>I/O性能强——内存、硬盘、PCI接口 </li><li>管理能力强——服务器管理监控系统 </li><li>可靠性强——数据保护技术、服务器操作系统  </li><li>可用性高——热插拔、电源技术 </li><li>扩展性强</li></ul><h4 id="6-关键组件-硬盘"><a href="#6-关键组件-硬盘" class="headerlink" title="6.关键组件-硬盘"></a>6.关键组件-硬盘</h4><ul><li>SATA： Serial ATA接口，即串行ATA，采用串行技术以获得更高的传输速度及可靠性。目前是第二代即SATAII。</li><li>SCSI：全称为“Small Computer System Interface”（小型计算机系统接口），具有应用范围广、多任务、带宽大、CPU占用率低，以及热插拔等优点 ，主要应用于中、高端服务器和高档工作站 。</li><li>SAS：Serial Attached SCSI接口，即串行SCSI， 采用串行技术以获得更高的传输速度。目前仍然是第一代。</li><li>SSD：固态存储硬盘(Solid State Disk) 其特别之处在于没有机械结构，以区块写入和抹除的方式作读写的功能，与目前的传统硬盘相较，具有低耗电、耐震、稳定性高、耐低温等优点。</li></ul><h4 id="7-关键组件-RAID"><a href="#7-关键组件-RAID" class="headerlink" title="7.关键组件-RAID"></a>7.关键组件-RAID</h4><ul><li>RAID 0（条带）　</li><li>RAID 1（镜像）　</li><li>RAID 3（奇偶位条带）　</li><li>RAID 10 (镜像条带阵列)　</li><li>RAID 5（分布奇偶位条带）   </li><li>RAID 6 (双分布奇偶位条带)</li></ul><p>​    <img src="https://cdn.jsdelivr.net/gh/limuhuaxia/picgo/img/202210121506131.png" alt="image-20221012150614490"></p><h4 id="8-关键组件介绍——HBA"><a href="#8-关键组件介绍——HBA" class="headerlink" title="8.关键组件介绍——HBA"></a>8.关键组件介绍——HBA</h4><ul><li><p>HBA:即主机总线适配器英文“Host Bus Adapter”缩写。用于服务器、海量存储子网络、外设间通过集线器、交换机和点对点连接进行双向、串行数据通讯。</p></li><li><p>作用是对接外部存储（NAS/SAN）</p></li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h4 id=&quot;1-什么是服务器&quot;&gt;&lt;a href=&quot;#1-什么是服务器&quot; class=&quot;headerlink&quot; title=&quot;1.什么是服务器&quot;&gt;&lt;/a&gt;1.什么是服务器&lt;/h4&gt;&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;t</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>存储基础知识</title>
     <link href="https://limuhuaxia.github.io/2022/10/12/20221012-%E5%AD%98%E5%82%A8%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
     <id>https://limuhuaxia.github.io/2022/10/12/20221012-%E5%AD%98%E5%82%A8%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</id>
@@ -144,26 +164,6 @@
       
     <summary type="html">&lt;h4 id=&quot;存储网络的存储架构&quot;&gt;&lt;a href=&quot;#存储网络的存储架构&quot; class=&quot;headerlink&quot; title=&quot;存储网络的存储架构&quot;&gt;&lt;/a&gt;存储网络的存储架构&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;DAS：直接附加存储   （Direct Attached Storag</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>服务器基础知识</title>
-    <link href="https://limuhuaxia.github.io/2022/10/12/20221012-%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
-    <id>https://limuhuaxia.github.io/2022/10/12/20221012-%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</id>
-    <published>2022-10-11T16:00:00.000Z</published>
-    <updated>2022-11-10T08:56:43.422Z</updated>
-    
-    <content type="html"><![CDATA[<h4 id="1-什么是服务器"><a href="#1-什么是服务器" class="headerlink" title="1.什么是服务器"></a>1.什么是服务器</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">服务器是计算机的一种，是网络中为客户端计算机提供各种服务的高性能的计算机</span><br></pre></td></tr></table></figure><h4 id="2-服务器按架构分类"><a href="#2-服务器按架构分类" class="headerlink" title="2.服务器按架构分类"></a>2.服务器按架构分类</h4><ul><li>X86架构</li><li>RISC架构服务器</li><li>EPIC架构服务器</li></ul><h4 id="3-服务器按功能应用分类"><a href="#3-服务器按功能应用分类" class="headerlink" title="3.服务器按功能应用分类"></a>3.服务器按功能应用分类</h4><ul><li><p>域控制服务器（Domain Server）</p></li><li><p>文件服务器（File Server）</p></li><li><p>打印服务器（Print Server）</p></li><li><p>数据库服务器（Database Server）</p></li><li><p>邮件服务器（E-mail Server）</p></li><li><p>Web服务器（Web Server）</p></li><li><p>多媒体服务器（Multimedia　Server）</p></li><li><p>通讯服务器（Communication Server）</p></li><li><p>终端服务器（Terminal Server）</p></li><li><p>基础架构服务器（Infrastructure Server）</p></li><li><p>虚拟化服务器（Virtualization Server）</p></li></ul><h4 id="4-服务器按外观分类"><a href="#4-服务器按外观分类" class="headerlink" title="4.服务器按外观分类"></a>4.服务器按外观分类</h4><ul><li><p>塔式（Tower）</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">立式放置的服务器机型；外形以及结构都跟立式PC差不多，但服务器机箱比PC机箱体积更大，Tower机型在外观尺寸上要求没有Rack严格，可预留更多扩展空间。</span><br></pre></td></tr></table></figure></li><li><p>机架式 （Rack）</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">外观尺寸及装配尺寸符合标准尺寸，可以放在标准高度的机架中。高度用“U”来计量， “U”为通用工业机架高度标准；1U＝1.75英寸=44.445mm</span><br></pre></td></tr></table></figure></li><li><p>刀片式服务器（Blade）</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">是一种高可用高密度的低成本服务器平台，是专门为特殊应用行业和高密度计算机环境设计的，其中每一块“刀片”实际上就是一块系统母板，类似于一个个独立的服务器。刀片式服务器目前最适合群集计算和提供互联网服务。</span><br></pre></td></tr></table></figure></li></ul><h4 id="5-服务器与PC机的区别"><a href="#5-服务器与PC机的区别" class="headerlink" title="5.服务器与PC机的区别"></a>5.服务器与PC机的区别</h4><ul><li>处理能力强——CPU的区别</li><li>I/O性能强——内存、硬盘、PCI接口 </li><li>管理能力强——服务器管理监控系统 </li><li>可靠性强——数据保护技术、服务器操作系统  </li><li>可用性高——热插拔、电源技术 </li><li>扩展性强</li></ul><h4 id="6-关键组件-硬盘"><a href="#6-关键组件-硬盘" class="headerlink" title="6.关键组件-硬盘"></a>6.关键组件-硬盘</h4><ul><li>SATA： Serial ATA接口，即串行ATA，采用串行技术以获得更高的传输速度及可靠性。目前是第二代即SATAII。</li><li>SCSI：全称为“Small Computer System Interface”（小型计算机系统接口），具有应用范围广、多任务、带宽大、CPU占用率低，以及热插拔等优点 ，主要应用于中、高端服务器和高档工作站 。</li><li>SAS：Serial Attached SCSI接口，即串行SCSI， 采用串行技术以获得更高的传输速度。目前仍然是第一代。</li><li>SSD：固态存储硬盘(Solid State Disk) 其特别之处在于没有机械结构，以区块写入和抹除的方式作读写的功能，与目前的传统硬盘相较，具有低耗电、耐震、稳定性高、耐低温等优点。</li></ul><h4 id="7-关键组件-RAID"><a href="#7-关键组件-RAID" class="headerlink" title="7.关键组件-RAID"></a>7.关键组件-RAID</h4><ul><li>RAID 0（条带）　</li><li>RAID 1（镜像）　</li><li>RAID 3（奇偶位条带）　</li><li>RAID 10 (镜像条带阵列)　</li><li>RAID 5（分布奇偶位条带）   </li><li>RAID 6 (双分布奇偶位条带)</li></ul><p>​    <img src="https://cdn.jsdelivr.net/gh/limuhuaxia/picgo/img/202210121506131.png" alt="image-20221012150614490"></p><h4 id="8-关键组件介绍——HBA"><a href="#8-关键组件介绍——HBA" class="headerlink" title="8.关键组件介绍——HBA"></a>8.关键组件介绍——HBA</h4><ul><li><p>HBA:即主机总线适配器英文“Host Bus Adapter”缩写。用于服务器、海量存储子网络、外设间通过集线器、交换机和点对点连接进行双向、串行数据通讯。</p></li><li><p>作用是对接外部存储（NAS/SAN）</p></li></ul>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h4 id=&quot;1-什么是服务器&quot;&gt;&lt;a href=&quot;#1-什么是服务器&quot; class=&quot;headerlink&quot; title=&quot;1.什么是服务器&quot;&gt;&lt;/a&gt;1.什么是服务器&lt;/h4&gt;&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;t</summary>
       
     
     
