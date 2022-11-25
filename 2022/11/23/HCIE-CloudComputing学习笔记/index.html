@@ -1,0 +1,295 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>HCIE-CloudComputing学习笔记 | limuのArknights</title><meta name="keywords" content="云计算"><meta name="author" content="limu"><meta name="copyright" content="limu"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="HCIE-CloudComputing的学习之旅">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HCIE-CloudComputing学习笔记">
+<meta property="og:url" content="https://limuhuaxia.github.io/2022/11/23/HCIE-CloudComputing%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.html">
+<meta property="og:site_name" content="limuのArknights">
+<meta property="og:description" content="HCIE-CloudComputing的学习之旅">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://limuhuaxia.github.io//img/0.png">
+<meta property="article:published_time" content="2022-11-23T01:17:46.000Z">
+<meta property="article:modified_time" content="2022-11-25T08:47:28.164Z">
+<meta property="article:author" content="limu">
+<meta property="article:tag" content="实习">
+<meta property="article:tag" content="云计算工程师">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://limuhuaxia.github.io//img/0.png"><link rel="shortcut icon" href="/img/head.jpg"><link rel="canonical" href="https://limuhuaxia.github.io/2022/11/23/HCIE-CloudComputing%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":200},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'HCIE-CloudComputing学习笔记',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: true,
+  isToc: true,
+  postUpdate: '2022-11-25 16:47:28'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    document.addEventListener('pjax:complete', detectApple)})(window)</script><link rel="stylesheet" href="/css/custom.css"><link rel="stylesheet" href="/css/web.css"><link rel="stylesheet" href="APlayer.min.css"><div id="aplayer"></div><script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js" async></script><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="limuのArknights" type="application/atom+xml">
+</head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/head.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">32</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">18</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">9</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-book"></i><span> 文章</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 方舟</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-plane"></i><span> 番剧</span></a></li><li><a class="site-page child" href="/Games/"><i class="fa-fw fas fa-gamepad"></i><span> 游戏</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/message"><i class="fa-fw fas fa-comment-dots"></i><span> 留言</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 我</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/0.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">limuのArknights</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-book"></i><span> 文章</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 方舟</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-plane"></i><span> 番剧</span></a></li><li><a class="site-page child" href="/Games/"><i class="fa-fw fas fa-gamepad"></i><span> 游戏</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/message"><i class="fa-fw fas fa-comment-dots"></i><span> 留言</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 我</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">HCIE-CloudComputing学习笔记</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-11-23T01:17:46.000Z" title="发表于 2022-11-23 09:17:46">2022-11-23</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-11-25T08:47:28.164Z" title="更新于 2022-11-25 16:47:28">2022-11-25</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E4%BA%91%E8%AE%A1%E7%AE%97/">云计算</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="HCIE-CloudComputing学习笔记"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="一、华为云计算解决方案介绍"><a href="#一、华为云计算解决方案介绍" class="headerlink" title="一、华为云计算解决方案介绍"></a>一、华为云计算解决方案介绍</h1><h2 id="华为云计算发展历史"><a href="#华为云计算发展历史" class="headerlink" title="华为云计算发展历史"></a>华为云计算发展历史</h2><h3 id="华为云计算解决方案"><a href="#华为云计算解决方案" class="headerlink" title="华为云计算解决方案"></a>华为云计算解决方案</h3><ul>
+<li>服务器虚拟化    ——Fusion Sphere</li>
+<li>私有云解决方案 ——Fusion Cloud</li>
+<li>桌面云——Fusion Access</li>
+</ul>
+<h3 id="华为云计算发展历程"><a href="#华为云计算发展历程" class="headerlink" title="华为云计算发展历程"></a>华为云计算发展历程</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">09		服务器虚拟化		FusionSphere	FusionCompute+FusionManager(纳管VMware)</span><br><span class="line">12		服务器虚拟化		R3		FusionSphere</span><br><span class="line">15		R5</span><br><span class="line">16		R6.0 R6.1	FusionSphere华为云计算总体解决方案</span><br><span class="line">		3个使用场景		1.服务器虚拟化	FusionCompute(xen)+FusionManager</span><br><span class="line">						2.云数据中心		FusionCompute(xen)+FusionSphereOpenstack</span><br><span class="line">						3.电信运营商		KVM+FusionSphereOpenstack</span><br><span class="line">18		R6.3	R6.5	服务器虚拟化FusionSphere	FusionCompute(KVM)+FusionManager</span><br><span class="line">						私有云FusionCloud（6.5以后叫华为云Stack）  KVM+FusionSphereOpenstack</span><br><span class="line">						桌面云FusionAccess（6.1）</span><br></pre></td></tr></table></figure>
+
+<h4 id="版本更替变化"><a href="#版本更替变化" class="headerlink" title="版本更替变化"></a>版本更替变化</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">6.5相比6.3	增加了对IPv6的支持</span><br><span class="line">8.0相比6.5	增加对arm芯片的支持</span><br></pre></td></tr></table></figure>
+
+<h3 id="华为FusionSphere-6-3-云操作系统架构"><a href="#华为FusionSphere-6-3-云操作系统架构" class="headerlink" title="华为FusionSphere 6.3 云操作系统架构"></a>华为FusionSphere 6.3 云操作系统架构</h3><img src="../../themes/Butterfly/image/image-20221123093949490.png" alt="image-20221123093949490" style="zoom:50%;" />
+
+<h4 id="FusionSphere分层"><a href="#FusionSphere分层" class="headerlink" title="FusionSphere分层"></a>FusionSphere分层</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">云计算层		Fusion Managerbcmanager</span><br><span class="line">虚拟化层		FusionCompute（计算、网络、存储虚拟化）、Fusion Storage（分布式块存储）、ebackup（备份）、bcmanager（容灾）。VMware(vphere\xen)</span><br><span class="line">硬件基础设施层		服务器、存储、路由器、交换机。。。。。。</span><br></pre></td></tr></table></figure>
+
+<h4 id="什么是Fusion-Compute"><a href="#什么是Fusion-Compute" class="headerlink" title="什么是Fusion Compute"></a>什么是Fusion Compute</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">FusionCompute是华为的研发的虚拟化软件，用于将物理资源，例如服务器、存储、交换机等物理设备虚拟化为资源池，已达到合理分配和充分利用资源的目的</span><br></pre></td></tr></table></figure>
+
+<h4 id="为什么是Fusion-Compute"><a href="#为什么是Fusion-Compute" class="headerlink" title="为什么是Fusion Compute"></a>为什么是Fusion Compute</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Fusion Compute提供了强大的兼容性（兼容x86和arm架构）</span><br><span class="line">组件CNA和ARM的形式使得资源得到充分利用（资源池）</span><br></pre></td></tr></table></figure>
+
+<h4 id="FusionCompute提供哪些功能"><a href="#FusionCompute提供哪些功能" class="headerlink" title="FusionCompute提供哪些功能"></a>FusionCompute提供哪些功能</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">计算			虚拟机热迁移</span><br><span class="line">			 虚拟机动态调整</span><br><span class="line">存储		    虚拟机快照</span><br><span class="line">			 虚拟存储精简置备</span><br><span class="line">网络			网络I/O控制</span><br><span class="line">			 分布式虚拟交换机</span><br></pre></td></tr></table></figure>
+
+<h4 id="FusionCompute的组成"><a href="#FusionCompute的组成" class="headerlink" title="FusionCompute的组成"></a>FusionCompute的组成</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">FusionCompute	CNA	虚拟化物理资源		</span><br><span class="line">						UVP (Unified Virtualization Platform)</span><br><span class="line">                                UVP实现底层硬件的虚拟化</span><br><span class="line">                                他们将底层硬件CPU、内存等虚拟化出了华为云端所用的CPU、内存等等</span><br><span class="line">                        VNA （Virtualization Node Agent ）</span><br><span class="line">                                VNA实现对接VRM，向上提供管理接口</span><br><span class="line">                                VNA是把UVP虚拟化好的计算存储网络组件提供给VRM</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">				VRM</span><br></pre></td></tr></table></figure>
+
+<h3 id="什么是FusionManager"><a href="#什么是FusionManager" class="headerlink" title="什么是FusionManager"></a>什么是FusionManager</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">FusionManager	统一云管理软件</span><br><span class="line">1.异构虚拟化管理（只有VMware）</span><br><span class="line">2.软硬件统一管理（不同厂商）</span><br><span class="line">3.提供快捷入口，快速发放虚拟机</span><br><span class="line">4.资源池划分（VDC、VPC）</span><br><span class="line">5.不同数据中通过top of local</span><br><span class="line">主流版本	</span><br><span class="line">		1.all in one	二合一</span><br><span class="line">		2.top of loacl	即4一个top管理多个loacl</span><br><span class="line">			2.1 top</span><br><span class="line">			2.2 local</span><br></pre></td></tr></table></figure>
+
+<h3 id="什么是FusionStorage"><a href="#什么是FusionStorage" class="headerlink" title="什么是FusionStorage"></a>什么是FusionStorage</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">FusionStorage		分布式存储软件</span><br><span class="line">存储分类</span><br><span class="line">	块存储：硬盘、RAID、LVM</span><br><span class="line">	优点：性能好，单点到单点，不存在资源竞争</span><br><span class="line">	缺点：不利于资源</span><br><span class="line">怎样使用一块硬盘？</span><br><span class="line">	1.分区（可选）</span><br><span class="line">	2.格式化（添加文件系统、置0）</span><br><span class="line">	</span><br><span class="line">	文件存储：主要存储元数据	EXT2、3、4	XFS FAT32 NTFS</span><br><span class="line">	优点：通常通过局域网访问，可以多点到单点，利于共享</span><br><span class="line">	缺点：性能较差</span><br><span class="line">	文件系统非常重要，是必须的（块存储本身没有文件系统）</span><br><span class="line">	元数据：描述数据的数据		EXT4</span><br><span class="line">	1.文件名字、大小	2.权限、可读可写可执行	3.时间（访问、修改）</span><br><span class="line">	EXT4文件系统对分区分为两部分：</span><br><span class="line">						inode:存储元数据</span><br><span class="line">						block:存储真正的数据</span><br><span class="line">						</span><br><span class="line">	对象存储：有文件系统，是分布式的，多点到多点的；利于共享，并且性能好</span><br><span class="line">	缺点：大规模，成本高</span><br><span class="line">	</span><br><span class="line">FusionStorage为了成为优秀的块存储软件，必须是多点到多点</span><br></pre></td></tr></table></figure>
+
+<h4 id="FusionStorage的组成"><a href="#FusionStorage的组成" class="headerlink" title="FusionStorage的组成"></a>FusionStorage的组成</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">FusionStorage架构</span><br><span class="line">1.管理组件</span><br><span class="line">FSM：FusionStorage管理模块，提供告警、监控、日志、配置等操作维护功能。一般情况下FSM主备部署。提供web UI界面。为了可靠性考虑，通常是主备部署，部署两台虚拟机上。</span><br><span class="line">FSA：代理进程，部署在各个节点上，实现各节点与FSM通信。FSA包含MDC、VBS和OSD三种不同的进程。根据系统不同配置要求，分别在不同的节点上启用不同的进程组合来完成特定的功能。</span><br><span class="line"></span><br><span class="line">2.存储组件</span><br><span class="line">MDC（MetaData Controller）：元数据控制，实现对分布式集群的状态控制，以及控制数据分布式规则 、数据重建规则等。MDC默认部署在3个节点的系统盘上，形成MDC集群。</span><br><span class="line">这里的元数据是什么？</span><br><span class="line">#数据分布式规则 、数据重建规则</span><br><span class="line">为什么默认是3个MDC节点？</span><br><span class="line">#MDC元数据存储于ZK（Zookeeper）中，开源集群协调软件。控制集群主备关系。MDC控制的元数据存放于ZK中，一个MDC对应一个ZK。</span><br><span class="line">不可以是一个，因为存在单点故障。多个：谁主谁备</span><br><span class="line">三个：因为ZK的投票机制（超过半数）</span><br><span class="line">实际：MDC的数量可以是3-96个，分为管理节点MDC（元数据控制，3），存储节点MDC（管理存储池，0-93个）</span><br><span class="line">存储池数量，0-128个。与MDC并不是一一对应，一般情况下，每增加一个存储池，就会创建一个存储节点MDC，一个存储MDC节点最多可以管理两个存储池。</span><br><span class="line"></span><br><span class="line">VBS（Virtual Block System）：虚拟块存储管理组件，负责卷元数据管理，提供分布式集群接入点服务，是计算资源能够通过VBS访问分布式存储资源。每个节点上默认部署一个VBS进程，形成VBS集群。节点上也可以通过部署多个VBS来提升IO性能。</span><br><span class="line">分布式集群接入点服务：外部主机需要访问FS时，实际先要访问VBS。SCSI、ISCSI</span><br><span class="line">卷元数据的管理：VBS所管理的元数据，就是传统意义上的元数据</span><br><span class="line">VBS的数量是1-4096个。（leader机制，存在瓶颈）</span><br><span class="line"></span><br><span class="line">OSD（Object Storage Device）：对象存储设备服务，执行具体的I/O操作（一般情况下，一个磁盘对应一个OSD）。在每个服务器上可部署多个OSD进程，一块磁盘对应部署一个OSD进程。在SSD卡作主存时，为了充分发挥SSD卡的性能，可以在一张SSD卡上部署多个OSD进程进行管理。</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">一般情况下，有OSD是存储节点，有VBS是计算节点，有MDC可能是管理节点</span><br><span class="line"></span><br><span class="line">IO：OS-&gt;VBS-&gt;OSD-&gt;disk</span><br></pre></td></tr></table></figure>
+
+<h4 id="FusionStorage应用场景"><a href="#FusionStorage应用场景" class="headerlink" title="FusionStorage应用场景"></a>FusionStorage应用场景</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">应用场景</span><br><span class="line">1.虚拟化：可扩展，容量要求高，性能要求一般。此时VBS与OSD和并部署</span><br><span class="line">2.数据库：性能要求高，此时VBS和OSD分开部署。VBS（计算节点）跑数据库</span><br></pre></td></tr></table></figure>
+
+<h4 id="FusionStorage特点（对比传统存储）"><a href="#FusionStorage特点（对比传统存储）" class="headerlink" title="FusionStorage特点（对比传统存储）"></a>FusionStorage特点（对比传统存储）</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">高扩展性</span><br><span class="line">	容量与性能线性增加</span><br><span class="line">高性价比</span><br><span class="line">	通用，x86服务器堆叠，节约成本</span><br><span class="line">高可靠性</span><br><span class="line">	自动数据重建恢复</span><br><span class="line">并行快速数据重建</span><br><span class="line">	故障后在全资源池内重建数据（重建1TB小于10分钟）</span><br><span class="line">	</span><br><span class="line">FS相比传统存储优势</span><br><span class="line">	1.传统存储最多32机头，并且无法做到线性增长。FS最多可以4096个节点，并且可以线性增长。</span><br><span class="line">	2.传统存储专用设备，昂贵、并且更新换代快。FS通用X86服务器，可利旧。并且可以融合部署。</span><br><span class="line">	3.传统存储可靠性较低，FS提供服务期间，柜间可靠性；硬盘故障无需管理，自动数据重建恢复</span><br><span class="line">	4.传统存储使用盘级虚拟化（raid），重构数据较慢。FS多点到多点的恢复，速度极快。</span><br></pre></td></tr></table></figure>
+
+<h4 id="Fusion-Sphere服务器虚拟化架构图"><a href="#Fusion-Sphere服务器虚拟化架构图" class="headerlink" title="Fusion Sphere服务器虚拟化架构图"></a>Fusion Sphere服务器虚拟化架构图</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1.云管理层：FusionManager（all in one\top of loacl）</span><br><span class="line">2.虚拟化软件层： FusionCompute（VRM、CNA）\FusionStorage\OVS\eBackup\BCmanager;vmware(非华为)</span><br><span class="line">3.硬件基础设施层：服务器、交换机、存储</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="二、FusionSphere服务器虚拟化"><a href="#二、FusionSphere服务器虚拟化" class="headerlink" title="二、FusionSphere服务器虚拟化"></a>二、FusionSphere服务器虚拟化</h1><h1 id="三、KVM虚拟化解决方案介绍"><a href="#三、KVM虚拟化解决方案介绍" class="headerlink" title="三、KVM虚拟化解决方案介绍"></a>三、KVM虚拟化解决方案介绍</h1><h1 id="四、FusionSphere-OpenStack"><a href="#四、FusionSphere-OpenStack" class="headerlink" title="四、FusionSphere OpenStack"></a>四、FusionSphere OpenStack</h1><h1 id="五、FusionCloud私有云解决方案"><a href="#五、FusionCloud私有云解决方案" class="headerlink" title="五、FusionCloud私有云解决方案"></a>五、FusionCloud私有云解决方案</h1><h1 id="六、FusionAccess桌面云运维"><a href="#六、FusionAccess桌面云运维" class="headerlink" title="六、FusionAccess桌面云运维"></a>六、FusionAccess桌面云运维</h1><h1 id="七、FusionStorage"><a href="#七、FusionStorage" class="headerlink" title="七、FusionStorage"></a>七、FusionStorage</h1></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">limu</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://limuhuaxia.github.io/2022/11/23/HCIE-CloudComputing%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">https://limuhuaxia.github.io/2022/11/23/HCIE-CloudComputing%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://limuhuaxia.github.io" target="_blank">limuのArknights</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%AE%9E%E4%B9%A0/">实习</a><a class="post-meta__tags" href="/tags/%E4%BA%91%E8%AE%A1%E7%AE%97%E5%B7%A5%E7%A8%8B%E5%B8%88/">云计算工程师</a></div><div class="post_share"><div class="social-share" data-image="https://limuhuaxia.github.io//img/0.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2022/11/15/%E4%BD%BF%E7%94%A8IRXON-BT578%E8%BF%9E%E6%8E%A5%E5%8D%8E%E4%B8%89%E4%BA%A4%E6%8D%A2%E6%9C%BA/"><img class="next-cover" src="https://limuhuaxia.github.io//img/1019.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">使用IRXON BT578连接并配置华三交换机</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2022/11/15/%E4%BD%BF%E7%94%A8IRXON-BT578%E8%BF%9E%E6%8E%A5%E5%8D%8E%E4%B8%89%E4%BA%A4%E6%8D%A2%E6%9C%BA/" title="使用IRXON BT578连接并配置华三交换机"><img class="cover" src="https://limuhuaxia.github.io//img/1019.png" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2022-11-17</div><div class="title">使用IRXON BT578连接并配置华三交换机</div></div></a></div><div><a href="/2022/11/14/%E6%B5%AA%E6%BD%AE%E6%9C%8D%E5%8A%A1%E5%99%A8/" title="浪潮服务器NF5270M4"><img class="cover" src="https://limuhuaxia.github.io//img/1149.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2022-11-17</div><div class="title">浪潮服务器NF5270M4</div></div></a></div><div><a href="/2022/11/09/%E5%8D%8E%E4%B8%BA%E4%BA%91%E6%A1%8C%E9%9D%A2%E8%BF%90%E7%BB%B4/" title="华为云桌面运维"><img class="cover" src="https://limuhuaxia.github.io//img/2311.webp" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2022-11-10</div><div class="title">华为云桌面运维</div></div></a></div><div><a href="/2022/11/09/%E8%AE%B0%E4%B8%80%E6%AC%A1%E8%B0%83%E8%AF%95AP/" title="记一次调试AP"><img class="cover" src="https://limuhuaxia.github.io//img/2013.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2022-11-10</div><div class="title">记一次调试AP</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="waline-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/head.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">limu</div><div class="author-info__description">欢迎来到limu的方舟</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">32</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">18</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">9</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/limuhuaxia"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">一天要比一天好</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E5%8D%8E%E4%B8%BA%E4%BA%91%E8%AE%A1%E7%AE%97%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E4%BB%8B%E7%BB%8D"><span class="toc-number">1.</span> <span class="toc-text">一、华为云计算解决方案介绍</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%8E%E4%B8%BA%E4%BA%91%E8%AE%A1%E7%AE%97%E5%8F%91%E5%B1%95%E5%8E%86%E5%8F%B2"><span class="toc-number">1.1.</span> <span class="toc-text">华为云计算发展历史</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%8E%E4%B8%BA%E4%BA%91%E8%AE%A1%E7%AE%97%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88"><span class="toc-number">1.1.1.</span> <span class="toc-text">华为云计算解决方案</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%8E%E4%B8%BA%E4%BA%91%E8%AE%A1%E7%AE%97%E5%8F%91%E5%B1%95%E5%8E%86%E7%A8%8B"><span class="toc-number">1.1.2.</span> <span class="toc-text">华为云计算发展历程</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%89%88%E6%9C%AC%E6%9B%B4%E6%9B%BF%E5%8F%98%E5%8C%96"><span class="toc-number">1.1.2.1.</span> <span class="toc-text">版本更替变化</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%8E%E4%B8%BAFusionSphere-6-3-%E4%BA%91%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84"><span class="toc-number">1.1.3.</span> <span class="toc-text">华为FusionSphere 6.3 云操作系统架构</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#FusionSphere%E5%88%86%E5%B1%82"><span class="toc-number">1.1.3.1.</span> <span class="toc-text">FusionSphere分层</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AFFusion-Compute"><span class="toc-number">1.1.3.2.</span> <span class="toc-text">什么是Fusion Compute</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AFFusion-Compute"><span class="toc-number">1.1.3.3.</span> <span class="toc-text">为什么是Fusion Compute</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#FusionCompute%E6%8F%90%E4%BE%9B%E5%93%AA%E4%BA%9B%E5%8A%9F%E8%83%BD"><span class="toc-number">1.1.3.4.</span> <span class="toc-text">FusionCompute提供哪些功能</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#FusionCompute%E7%9A%84%E7%BB%84%E6%88%90"><span class="toc-number">1.1.3.5.</span> <span class="toc-text">FusionCompute的组成</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AFFusionManager"><span class="toc-number">1.1.4.</span> <span class="toc-text">什么是FusionManager</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AFFusionStorage"><span class="toc-number">1.1.5.</span> <span class="toc-text">什么是FusionStorage</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#FusionStorage%E7%9A%84%E7%BB%84%E6%88%90"><span class="toc-number">1.1.5.1.</span> <span class="toc-text">FusionStorage的组成</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#FusionStorage%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF"><span class="toc-number">1.1.5.2.</span> <span class="toc-text">FusionStorage应用场景</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#FusionStorage%E7%89%B9%E7%82%B9%EF%BC%88%E5%AF%B9%E6%AF%94%E4%BC%A0%E7%BB%9F%E5%AD%98%E5%82%A8%EF%BC%89"><span class="toc-number">1.1.5.3.</span> <span class="toc-text">FusionStorage特点（对比传统存储）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Fusion-Sphere%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%99%9A%E6%8B%9F%E5%8C%96%E6%9E%B6%E6%9E%84%E5%9B%BE"><span class="toc-number">1.1.5.4.</span> <span class="toc-text">Fusion Sphere服务器虚拟化架构图</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BA%8C%E3%80%81FusionSphere%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%99%9A%E6%8B%9F%E5%8C%96"><span class="toc-number">2.</span> <span class="toc-text">二、FusionSphere服务器虚拟化</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%89%E3%80%81KVM%E8%99%9A%E6%8B%9F%E5%8C%96%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E4%BB%8B%E7%BB%8D"><span class="toc-number">3.</span> <span class="toc-text">三、KVM虚拟化解决方案介绍</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%9B%9B%E3%80%81FusionSphere-OpenStack"><span class="toc-number">4.</span> <span class="toc-text">四、FusionSphere OpenStack</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BA%94%E3%80%81FusionCloud%E7%A7%81%E6%9C%89%E4%BA%91%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88"><span class="toc-number">5.</span> <span class="toc-text">五、FusionCloud私有云解决方案</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%85%AD%E3%80%81FusionAccess%E6%A1%8C%E9%9D%A2%E4%BA%91%E8%BF%90%E7%BB%B4"><span class="toc-number">6.</span> <span class="toc-text">六、FusionAccess桌面云运维</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%83%E3%80%81FusionStorage"><span class="toc-number">7.</span> <span class="toc-text">七、FusionStorage</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/11/23/HCIE-CloudComputing%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" title="HCIE-CloudComputing学习笔记"><img src="https://limuhuaxia.github.io//img/0.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="HCIE-CloudComputing学习笔记"/></a><div class="content"><a class="title" href="/2022/11/23/HCIE-CloudComputing%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" title="HCIE-CloudComputing学习笔记">HCIE-CloudComputing学习笔记</a><time datetime="2022-11-23T01:17:46.000Z" title="发表于 2022-11-23 09:17:46">2022-11-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/11/15/%E4%BD%BF%E7%94%A8IRXON-BT578%E8%BF%9E%E6%8E%A5%E5%8D%8E%E4%B8%89%E4%BA%A4%E6%8D%A2%E6%9C%BA/" title="使用IRXON BT578连接并配置华三交换机"><img src="https://limuhuaxia.github.io//img/1019.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="使用IRXON BT578连接并配置华三交换机"/></a><div class="content"><a class="title" href="/2022/11/15/%E4%BD%BF%E7%94%A8IRXON-BT578%E8%BF%9E%E6%8E%A5%E5%8D%8E%E4%B8%89%E4%BA%A4%E6%8D%A2%E6%9C%BA/" title="使用IRXON BT578连接并配置华三交换机">使用IRXON BT578连接并配置华三交换机</a><time datetime="2022-11-15T03:10:20.000Z" title="发表于 2022-11-15 11:10:20">2022-11-15</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/11/14/%E6%B5%AA%E6%BD%AE%E6%9C%8D%E5%8A%A1%E5%99%A8/" title="浪潮服务器NF5270M4"><img src="https://limuhuaxia.github.io//img/1149.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="浪潮服务器NF5270M4"/></a><div class="content"><a class="title" href="/2022/11/14/%E6%B5%AA%E6%BD%AE%E6%9C%8D%E5%8A%A1%E5%99%A8/" title="浪潮服务器NF5270M4">浪潮服务器NF5270M4</a><time datetime="2022-11-14T02:29:34.000Z" title="发表于 2022-11-14 10:29:34">2022-11-14</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('/img/0.png')"><div id="footer-wrap"><div class="copyright">&copy;2021 - 2022 By limu</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text"><a href="https://icp.gov.moe/?keyword=20220492" target="_blank">萌ICP备20220492号</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>function loadWaline () {
+  function initWaline () {
+    const waline = new Waline(Object.assign({
+      el: '#waline-wrap',
+      serverURL: 'https://limuhuaxia.up.railway.app/',
+      avatar: 'monsterid',
+      avatarCDN: '//cdn.jsdelivr.net/npm/@waline/client',
+      path: location.pathname,
+      visitor: false,
+      dark: 'html[data-theme="dark"]'
+    }, null))
+  }
+
+  if (typeof Waline === 'function') initWaline() 
+  else getScript('https://cdn.jsdelivr.net/npm/@waline/client').then(initWaline)
+}
+
+if ('Waline' === 'Waline' || !false) {
+  if (false) btf.loadComment(document.getElementById('waline-wrap'),loadWaline)
+  else setTimeout(loadWaline, 0)
+} else {
+  function loadOtherComment () {
+    loadWaline()
+  }
+}</script></div>null<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = [
+  'title',
+  '#config-diff',
+  '#body-wrap',
+  '#rightside-config-hide',
+  '#rightside-config-show',
+  '.js-pjax'
+]
+
+if (false) {
+  pjaxSelectors.unshift('meta[property="og:image"]', 'meta[property="og:title"]', 'meta[property="og:url"]')
+}
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.removeEventListener('scroll', window.tocScrollFn)
+  window.removeEventListener('scroll', scrollCollect)
+
+  typeof preloader === 'object' && preloader.initLoading()
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // Analytics
+  if (false) {
+    MtaH5.pgv()
+  }
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
